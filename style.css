@@ -195,44 +195,6 @@ nav a:active {
     background-color: gold;
 }
 
-/* Spielplan-Styles */
-
-.spielplan-seite,
-.halbfinale-seite,
-.viertelfinale-seite,
-.finale-seite,
-.achtelfinale-seite {
-    color: white;
-    background-color: #0a102c;
-}
-
-main {
-    padding: 10px;
-}
-
-/* Element Spielplan oben mit kalender */
-section.spielplan-header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-}
-
-.header-content h1 {
-    font-size: 15px;
-}
-
-.header-content h1~p {
-    font-size: 8px;
-}
-
-.spielplan-header img {
-    width: 25px;
-    height: 30px;
-
-}
-
-
 /* countdown */
 .countdown-section {
     color: white;
@@ -273,6 +235,166 @@ section.spielplan-header {
     margin: 8px 0 0;
     font-size: 10px;
 }
+
+/* Section2 index Navigationsleiste nach dem Shakira-Video */
+.section2-blöcke {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 5px;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 8px;
+
+}
+
+.section2-blöcke1 {
+    display: block;
+    border: 1px solid rgba(255, 215, 0, 0.25);
+    border-radius: 5px;
+    margin: 10px;
+    margin-top: 0;
+    padding: 5px;
+}
+
+.section2-blöcke1:hover {
+    border: 1px solid gold;
+
+}
+
+.section2-blöcke1 img {
+    height: 40px;
+    width: 40px;
+}
+
+#karte1 {
+    background-image: url("./New_Fotos/spielplan.jpg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#karte2 {
+    background-image: url("./New_Fotos/gruppen.jpg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#karte3 {
+    background-image: url("./New_Fotos/quiz.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Block das Turnier auf einem Blick */
+.section3 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 20px;
+    font-size: 8px;
+    min-height: 100px;
+}
+
+.section3 img {
+    width: 35px;
+}
+
+.section3-blöcke {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid rgba(255, 215, 0, 0.25);
+    padding: 20px;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+p.zahl-index {
+    color: gold;
+    font-size: 10px;
+}
+
+#stadien p {
+    font-size: 10px;
+
+}
+#stadien{
+    border: none;
+}
+/* Aside style-index */
+aside{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid rgba(255, 215, 0, 0.25);
+    width: 100%;
+    font-size: 10px;
+
+}
+.aside-blöcke{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;   
+}
+ .aside-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.link-aside{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+
+
+/* Spielplan-Styles */
+
+.spielplan-seite,
+.halbfinale-seite,
+.viertelfinale-seite,
+.finale-seite,
+.achtelfinale-seite {
+    color: white;
+    background-color: #0a102c;
+}
+
+main {
+    padding: 10px;
+}
+
+/* Element Spielplan oben mit kalender */
+section.spielplan-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-content h1 {
+    font-size: 15px;
+}
+
+.header-content h1~p {
+    font-size: 8px;
+}
+
+.spielplan-header img {
+    width: 25px;
+    height: 30px;
+
+}
+
+
+
+
+
 
 /* Spielplan Body  */
 
@@ -399,16 +521,7 @@ iframe,
     padding: 20px 15px;
 }
 
-/* .filter-section ul {
-    width: 100%;
-    max-width: 650px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 10px;
-    padding: 0;
-    margin: 0 auto 30px auto;
-    list-style: none;
-} */
+
 .filter-section ul {
     width: 100%;
     display: grid;
@@ -677,55 +790,7 @@ footer li:hover {
 
 
 
-/* Section2 index Navigationsleiste nach dem Shakira-Video */
-.section2-blöcke {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    row-gap: 5px;
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 8px;
 
-}
-
-.section2-blöcke1 {
-    display: block;
-    border: 1px solid rgba(255, 215, 0, 0.25);
-    border-radius: 5px;
-    margin: 10px;
-    margin-top: 0;
-    padding: 5px;
-}
-
-.section2-blöcke1:hover {
-    border: 1px solid gold;
-
-}
-
-.section2-blöcke1 img {
-    height: 40px;
-    width: 40px;
-}
-
-#karte1 {
-    background-image: url("./New_Fotos/spielplan.jpg.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-#karte2 {
-    background-image: url("./New_Fotos/gruppen.jpg.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-#karte3 {
-    background-image: url("./New_Fotos/quiz.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
 
 /* Anzeige von dem Element Mehr Ansehen in Kärtchen */
 .section2-blöcke a {
@@ -992,7 +1057,7 @@ footer {
 }
 
 
-
+/* Finale Seite */
 
 .attraktion-card {
     display: flex;
@@ -1013,11 +1078,13 @@ footer {
     border-radius: 10px;
 
 }
-.attraktion-card .fotonews-halbfinale{
+
+.attraktion-card .fotonews-halbfinale {
     align-items: center;
     padding: 1px;
 }
-.fotonews-halbfinale img{
+
+.fotonews-halbfinale img {
     width: 100%;
 
 }
