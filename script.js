@@ -9,36 +9,55 @@ function toggleSpiele(buttonId, spieleKlasse) {
     let sichtbar = false;
     let is_computer = window.innerWidth >= 561;
     let sichtbar_mehranzeigen = 0;
-    let i=0;
+    let i = 0;
     if (is_computer && extraSpiele.length > 0) {
-        while(i<8){
+        while (i < 8) {
             extraSpiele[i].style.display = "block";
-            sichtbar_mehranzeigen=1;
+            sichtbar_mehranzeigen = 1;
             i++;
         }
 
 
     }
 
-    if (button) {
-        button.addEventListener("click", function () {
-            if (sichtbar === false) {
-                extraSpiele.forEach(function (spiel) {
-                    spiel.style.display = "table-row";
-                });
+    function toggleSpiele(buttonId, spieleKlasse) {
+        const button = document.getElementById(buttonId);
+        const extraSpiele = document.querySelectorAll(spieleKlasse);
 
-                button.textContent = "Weniger zeigen";
-                sichtbar = true;
-            } else {
-                extraSpiele.forEach(function (spiel) {
-                    spiel.style.display = "none";
-                });
+        let sichtbar = false;
 
-                button.textContent = "Mehr Spiele anzeigen";
-                sichtbar = false;
-            }
-        });
+        if (button) {
+            button.addEventListener("click", function () {
+                if (sichtbar === false) {
+                    extraSpiele.forEach(function (spiel) {
+                        spiel.style.display = "block";
+                    });
+
+                    button.textContent = "Weniger zeigen";
+                    sichtbar = true;
+                } else {
+                    extraSpiele.forEach(function (spiel) {
+                        spiel.style.display = "none";
+                    });
+
+                    button.textContent = "Mehr Spiele anzeigen";
+                    sichtbar = false;
+                    // Wenn man auf mehr anzeigen klickt und wieder auf weniger ,springt nicht ans Ende sondern an Anfang smooth auto
+                    const section = button.closest(".spielplan-section");
+
+                    if (section) {
+                        section.scrollIntoView({
+                            behavior: "auto",
+                            block: "start"
+                        });
+                    }
+                }
+            });
+        }
     }
+
+    toggleSpiele("mehrSpieleBtn", ".extra-spiel");
+    toggleSpiele("mehrSpieleBtn2", ".extra-spiel2");
 }
 
 toggleSpiele("mehrSpieleBtn", ".extra-spiel");
