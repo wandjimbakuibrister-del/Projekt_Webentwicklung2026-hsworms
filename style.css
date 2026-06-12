@@ -318,45 +318,82 @@ p.zahl-index {
     font-size: 10px;
 
 }
-#stadien{
+
+#stadien {
     border: none;
 }
-/* Aside style-index */
-aside{
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 10px;
-    border: 1px solid rgba(255, 215, 0, 0.25);
-    width: 100%;
-    font-size: 10px;
 
-}
-.aside-blöcke{
+/* Aside style-index */
+.aside-blöcke {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 5px;
-    margin-bottom: 5px   
+    gap: 12px;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 215, 0, 0.25);
+    padding: 20px;
+
+    box-sizing: border-box;
 }
- .aside-text{
+
+.aside-blöcke img {
+    width: 100px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.aside-text {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    
+    gap: 15px;
+    flex: 1;
+}
+
+.aside-text h3 {
+    margin: 0;
+    font-size: 15px;
 }
 .link-aside{
-    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    min-width: 100%;
-    width: 100%;
 }
-.button{
+
+.aside-text p {
+    margin: 0;
+    font-size: 8px;
+}
+.news-aside {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px;
+    color: gold;
+    gap: 10px;
+}
+.news-aside span{
+    flex: 1;
+    height: 1px;
     background-color: gold;
-
 }
 
+.button {
+    width: 15px;
+    height: 15px;
+    border: none;
+    border-radius: 50%;
+    background-color: gold;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+.aside-blöcke h3:hover{
+    color:gold;
+}
+button:hover{
+    transform: scale(1.60);
+    transition: transform 0.3s ease;
+}
 
 
 
@@ -793,10 +830,6 @@ footer li:hover {
 }
 
 /* Für navigationsleiste Startseite für PC */
-
-
-
-
 
 /* Anzeige von dem Element Mehr Ansehen in Kärtchen */
 .section2-blöcke a {
