@@ -303,6 +303,7 @@ nav a:active {
     display: flex;
     flex-direction: column;
     border-right: 1px solid rgba(255, 215, 0, 0.25);
+    height: auto;
     padding: 20px;
     justify-content: space-between;
     text-align: center;
@@ -669,10 +670,108 @@ footer li:hover {
     color: gold;
 }
 
+/* für PC Startseite */
+/* @media(min-width: 768px) */
+
 /* Für PC */
 @media (min-width: 768px) {
 
     /* header */
+    /* Logo oben links*/
+    .header-title{
+        font-size: 25px;
+    }
+    #logo-links img{
+        width: 100px;
+    }
+    /* Element Das grösste Turnier der Welt mit Strich neben */
+    .titel-strich{
+        width: 40%;
+    }
+    .titel-strich i{
+        font-size: 1rem;
+    }
+    /* Code für Items-grösse auf dem Hintergrundsbild */
+    .text-section1 h1{
+        font-size: 4rem;
+    }
+    .text-section1 .jahr{
+        font-size: 5rem;
+    }
+    /* Video Ishowspeed */
+    .video-offiziel{
+        display: none;
+    }
+    /* Navigationsleiste */
+    .section2{
+        margin-top: 20px;
+    }
+    /* section3-aside */
+    .section3-aside{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin: 10px;
+    }
+    p.zahl-index{
+        font-size: 30px;
+    }
+    #stadien p{
+        font-size: 20px;
+    }
+    .section3{
+        font-size: 15px;
+    }
+    .section3 img{
+        width: 50px;
+    }
+    #stadien{
+        border-right:1px solid rgba(255, 215, 0, 0.25);
+    }
+    /* Aside style-index */
+    .aside-text h3{
+        font-size: 25px;
+    }
+    .aside-text p{
+        font-size: 15px;
+    }
+    .news-aside h3{
+        font-size: 30px;
+    }
+     aside div:nth-child(4){
+        border-bottom: none;
+    }
+
+
+    /* Burger menü */
+    .burger {
+        display: none;
+    }
+
+    nav {
+        display: block;
+        position: static;
+        background-color: transparent;
+        border: none;
+        border-radius: 0;
+        padding: 0;
+        min-width: auto;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+        align-items: center;
+    }
+
+    nav li {
+        margin-bottom: 0;
+    }
+
+    nav a {
+        font-size: 18px;
+    }
+
     #logo-links {
         font-size: 10px;
     }
@@ -828,6 +927,8 @@ footer li:hover {
     .navigation-impressum a:hover {
         color: gold;
     }
+
+
 
 
 
@@ -1111,7 +1212,7 @@ footer {
 }
 
 .attraktionen h1,
-.attraktionen > p {
+.attraktionen>p {
     text-align: center;
     color: white;
 }
@@ -1121,7 +1222,7 @@ footer {
     margin-bottom: 10px;
 }
 
-.attraktionen > p {
+.attraktionen>p {
     font-size: 16px;
     margin-bottom: 25px;
 }
@@ -1161,7 +1262,7 @@ footer {
     height: auto;
     display: block;
     border-radius: 10px;
-   
+
 }
 
 .text-halbfinale h2,
@@ -1188,6 +1289,7 @@ footer {
 .icon {
     margin-right: 4px;
 }
+
 @media (min-width: 768px) {
     .attraktionen {
         padding: 30px;
@@ -1198,7 +1300,7 @@ footer {
         text-align: center;
     }
 
-    .attraktionen > p {
+    .attraktionen>p {
         font-size: 20px;
         text-align: center;
     }
@@ -1232,7 +1334,7 @@ footer {
 
     .fotonews-halbfinale img,
     .fotonews-spielplan img,
-    .attraktionen .news-pokal > img,
+    .attraktionen .news-pokal>img,
     .video-finale video {
         width: 100%;
         max-width: 100%;
@@ -1283,6 +1385,7 @@ footer {
     border: 1px solid rgba(255, 215, 0, 0.25);
     border-radius: 10px;
 }
+
 @media (min-width: 768px) {
     .grossblock-finale {
         grid-template-columns: repeat(2, 1fr);
@@ -1290,6 +1393,7 @@ footer {
         gap: 25px;
         padding: 30px;
     }
+
     /* .block-finale img{
         height:205px;
     } */
