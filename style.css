@@ -987,46 +987,39 @@ footer li:hover {
     color: white;
 }
 
-/* Grand bandeau titre "GRUPPEN" */
-/* Conteneur principal positionné en mode "relatif" pour gérer la superposition */
+/* Hauptcontainer für den Banner */
 .gruppen-banner-container {
-    position: relative;
     width: 100%;
-    height: 220px;
-    /* Hauteur de la zone du stade */
-    border-radius: 12px;
-    overflow: hidden;
-    margin-bottom: 40px;
+    text-align: center;
 }
 
-/* L'image prend 100% de la place et se comporte comme un fond grâce à object-fit */
+/* Das Hintergrundbild als normaler Block */
 .banner-hintergrund-img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
+    height: 250px;
+    object-fit: cover; /* Bild füllt den Bereich ohne Verzerrung */
+    display: block;
 }
 
-/* Le contenu (Titre + Logo) est mis au premier plan avec un fond sombre transparent */
+/* Der Textbereich wird mit einer negativen Marge nach oben geschoben */
 .gruppen-banner-content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-    background: linear-gradient(to right, rgba(2, 6, 23, 0.95), rgba(2, 6, 23, 0.4));
+    margin-top: -200px; /* Zieht den Text direkt über das Bild */
+    position: relative; /* Aktiviert die korrekte Anzeige über dem Bild */
+    
+    /* Flexbox aus dem Kurs: Ausrichtung nach links */
     display: flex;
-    align-items: center;
-    gap: 25px;
-    padding: 0 30px;
-    box-sizing: border-box;
+    flex-direction: column;
+    align-items: flex-start; /* 👈 Richtet das Logo und den Text linksbündig aus */
+    justify-content: center;
+    
+    padding-left: 40px; /* 👈 Schiebt den Inhalt ein Stück weg vom linken Bildschirmrand */
+    color: white; /* Textfarbe auf Weiß setzen */
 }
 
+/* Falls die Texte im inneren noch zentriert sind, zwingen wir sie nach links */
+.banner-text {
+    text-align: left; /* 👈 Sorgt dafür, dass der Text linksbündig bleibt */
+}
 /* On s'assure que le titre reste bien en blanc pur */
 .titel-strich-gruppen {
     font-family: 'Bebas Neue', Arial, sans-serif;
@@ -1203,6 +1196,21 @@ footer {
     background-color: #020a1f;
     padding: 40px 5% 20px 5%;
 
+}
+
+/* Styling für die neuen Links in den Info-Blöcken */
+.box-link {
+    display: inline-block;
+    margin-top: 10px;        /* Abstand nach oben zum Text */
+    color: #ffffff;          /* Textfarbe auf Weiß setzen */
+    text-decoration: none;   /* Entfernt den Standard-Unterstrich */
+    font-weight: bold;       /* Macht den Text fett */
+}
+
+/* Hover-Effekt aus dem Kurs */
+.box-link:hover {
+    text-decoration: underline; /* Unterstreicht den Link beim Drüberfahren */
+    color: #ffcc00;             /* Optionale Farbänderung beim Hovern */
 }
 
 
