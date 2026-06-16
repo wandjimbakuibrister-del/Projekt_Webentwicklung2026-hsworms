@@ -720,6 +720,7 @@ footer li:hover {
     }
     .section3{
         font-size: 15px;
+        flex: 2;
     }
     .section3 img{
         width: 50px;
@@ -739,6 +740,9 @@ footer li:hover {
     }
      aside div:nth-child(4){
         border-bottom: none;
+    }
+    .aside{
+        flex: 1;
     }
 
 
