@@ -4,6 +4,68 @@
     margin: 0;
 }
 
+/* ==========================================================================
+   NEUER HEADER & BANNER CODE (FÜR DIE FIXIERUNG & AUSRICHTUNG)
+   ========================================================================== */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 90px;
+    background-color: rgb(2, 6, 23); /* Dunkler Hintergrund, damit nichts durchscheint */
+    padding: 0 16px;
+    border-bottom: 2px solid gold;
+    
+    /* Fixierung oben am Bildschirm beim Scrollen */
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999; /* Bleibt immer über den Tabellen und Texten */
+}
+
+/* Verhindert, dass der Inhalt durch den fixierten Header verdeckt wird */
+body {
+    padding-top: 95px; 
+}
+
+/* Der Container für das Stadion-Hintergrundbild */
+.gruppen-banner-container {
+    background-image: url("./New_Fotos/spielplan.jpg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 220px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Flexbox: Setzt Logo und Text sauber nebeneinander auf eine Linie */
+.gruppen-banner-content {
+    display: flex;
+    flex-direction: row;    /* ➡️ Nebeneinander (Horizonal) */
+    align-items: center;    /* Vertikal zentriert */
+    gap: 20px;              /* Abstand zwischen Logo und Text */
+    padding-left: 40px;
+}
+
+/* Falls du ein Logo im Banner hast, steuert das die Größe */
+.banner-icon-img {
+    width: 80px;
+    height: auto;
+    display: block;
+}
+
+/* Hält den Haupttitel über dem Untertitel */
+.banner-text {
+    display: flex;
+    flex-direction: column; 
+    text-align: left;
+}
+
 /* Logo-cop oben Links mit schriften */
 #logo-links {
     display: flex;
@@ -23,20 +85,7 @@ div.header-container {
     font-family: "Bebas Neue", sans-serif;
 }
 
-/*#################### Navigationsleiste mit Flexbox ############*/
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 90px;
-    background-color: rgb(2, 6, 23);
-    padding: 0 16px;
-    position: relative;
-    border-bottom: 2px solid gold;
 
-    position: sticky;
-    top: 0;
-}
 
 .burger {
     display: block;
@@ -987,38 +1036,8 @@ footer li:hover {
     color: white;
 }
 
-/* Hauptcontainer für den Banner */
-.gruppen-banner-container {
-    width: 100%;
-    text-align: center;
-}
-
-/* Das Hintergrundbild als normaler Block */
-.banner-hintergrund-img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover; /* Bild füllt den Bereich ohne Verzerrung */
-    display: block;
-}
-
-/* Der Textbereich wird mit einer negativen Marge nach oben geschoben */
-.gruppen-banner-content {
-    margin-top: -200px; /* Zieht den Text direkt über das Bild */
-    position: relative; /* Aktiviert die korrekte Anzeige über dem Bild */
-    
-    /* Flexbox aus dem Kurs: Ausrichtung nach links */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* 👈 Richtet das Logo und den Text linksbündig aus */
-    justify-content: center;
-    
-    padding-left: 40px; /* 👈 Schiebt den Inhalt ein Stück weg vom linken Bildschirmrand */
-    color: white; /* Textfarbe auf Weiß setzen */
-}
-
-/* Falls die Texte im inneren noch zentriert sind, zwingen wir sie nach links */
 .banner-text {
-    text-align: left; /* 👈 Sorgt dafür, dass der Text linksbündig bleibt */
+    text-align: left;
 }
 /* On s'assure que le titre reste bien en blanc pur */
 .titel-strich-gruppen {
