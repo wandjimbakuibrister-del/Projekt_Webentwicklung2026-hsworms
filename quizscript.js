@@ -1,45 +1,101 @@
-const richtig1 = "Antwort1";
-const richtig2 = "Antwort7";
-let punkte = 0;
-
-// Frage 1
-document.getElementById("Antwort1").addEventListener("click", () => pruefLoesung1("Antwort1"));
-document.getElementById("Antwort2").addEventListener("click", () => pruefLoesung1("Antwort2"));
-document.getElementById("Antwort3").addEventListener("click", () => pruefLoesung1("Antwort3"));
-document.getElementById("Antwort4").addEventListener("click", () => pruefLoesung1("Antwort4"));
-
-function pruefLoesung1(loesung) {
-    const result = document.getElementById("result");
-
-    if (loesung === richtig1) {
-        result.textContent = "Richtig";
-
-        document.getElementById("quiz").style.display = "none";
-        document.getElementById("quiz2").style.display = "block";
-        punkte++;
-    } else {
-        result.textContent = "Versuchen Sie es noch einmal";
+// Gesch
+const fragen = [
+    FragenGeschichte = {
+        frage: "In welchem Jahr fand die erste Fußball-Weltmeisterschaft statt?",
+        antworten: ["1920", "1930", "1950", "1966"],
+        richtig: 1
+    },
+    {
+        frage: "In welchem Land fand die erste Fußball-WM statt?",
+        antworten: ["Brasilien", "Uruguay", "Deutschland", "Italien"],
+        richtig: 1
+    },
+    {
+        frage: "Welches Land gewann die erste Fußball-WM?",
+        antworten: ["Argentinien", "Brasilien", "Uruguay", "Frankreich"],
+        richtig: 2
+    },
+    {
+        frage: "Welches Land gewann die WM 2014?",
+        antworten: ["Brasilien", "Deutschland", "Argentinien", "Spanien"],
+        richtig: 1
+    },
+    {
+        frage: "Wo fand die Fußball-WM 2006 statt?",
+        antworten: ["Deutschland", "Frankreich", "Italien", "Südafrika"],
+        richtig: 0
+    },
+    {
+        frage: "Welches Land gewann die WM 1998?",
+        antworten: ["Brasilien", "Deutschland", "Frankreich", "Niederlande"],
+        richtig: 2
+    },
+    {
+        frage: "Welches Land gewann die WM 2022?",
+        antworten: ["Frankreich", "Argentinien", "Brasilien", "Kroatien"],
+        richtig: 1
+    },
+    {
+        frage: "Wo fand die WM 2010 statt?",
+        antworten: ["Katar", "Südafrika", "Russland", "Japan"],
+        richtig: 1
+    },
+    {
+        frage: "Welches Land hat bisher die meisten Fußball-WM-Titel gewonnen?",
+        antworten: ["Deutschland", "Italien", "Argentinien", "Brasilien"],
+        richtig: 3
+    },
+    {
+        frage: "Welches Land gewann die WM 2018?",
+        antworten: ["Frankreich", "Kroatien", "Belgien", "England"],
+        richtig: 0
     }
+];
+const frageText=document.querySelector(".quiz-frage");
+const buttons=document.querySelectorAll(".antwort-btn");
 
-    let score = document.getElementById("score");
-    score.textContent = punkte;
+const pruefenBtn=document.getElementsByClassName("pruefen-btn");
+
+frageText.textContent=fragen[1].frage;
+
+buttons.forEach(function(buttons,i){
+    const AntwortText=buttons.querySelector("span:last-child");
+    AntwortText.textContent=fragen[1].antworten[i];
+    
+});
+
+
+// API
+const API_KEY = "a5b26a297c234fceb7ec363253d4ed68";
+
+
+async function loadScores() {
+    try {
+        const response = await fetch(
+            "https://v3.football.api-sports.io/fixtures?live=all",
+            {
+                headers: {
+                    "x-apisports-key": API_KEY
+                }
+            }
+        );
+
+        const data = await response.json();
+
+        const ticker = document.getElementById("ticker");
+
+        ticker.innerHTML = data.response.map(match => `
+            <div class="score-box">
+                ${match.teams.home.name}
+                ${match.goals.home} : ${match.goals.away}
+                ${match.teams.away.name}
+            </div>
+        `).join("");
+
+    } catch (err) {
+        console.error(err);
+    }
 }
 
-
-
-
-// // Frage 2
-// document.getElementById("Antwort5").addEventListener("click", () => pruefLoesung2("Antwort5"));
-// document.getElementById("Antwort6").addEventListener("click", () => pruefLoesung2("Antwort6"));
-// document.getElementById("Antwort7").addEventListener("click", () => pruefLoesung2("Antwort7"));
-// document.getElementById("Antwort8").addEventListener("click", () => pruefLoesung2("Antwort8"));
-
-// function pruefLoesung2(loesung) {
-//     const result2 = document.getElementById("result2");
-
-//     if (loesung === richtig2) {
-//         result2.textContent = "Richtig";
-//     } else {
-//         result2.textContent = "Versuchen Sie es noch einmal";
-//     }
-// }
+loadScores();
+setInterval(loadScores, 30000);

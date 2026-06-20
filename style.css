@@ -1057,7 +1057,7 @@ footer li:hover {
 
 .banner-text h1 {
     font-family: 'Bebas Neue', Arial, sans-serif;
-    font-size: 3rem;
+    font-size: 2rem;
     margin: 0;
     letter-spacing: 2px;
 }
@@ -1476,7 +1476,6 @@ footer {
     max-width: 900px;
     margin: 30px auto;
     padding: 20px;
-    border: 1px solid rgba(255, 188, 45, 0.6);
     border-radius: 14px;
     background-color: rgb(3, 18, 45);
 }
@@ -1561,5 +1560,66 @@ footer {
         width: 300px;
         display: block;
         margin: 22px auto 0;
+    }
+}
+
+
+
+/* API*/
+.ticker-container {
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 0;
+    background: linear-gradient(90deg, #0f172a, #1e293b);
+}
+
+.ticker {
+    display: flex;
+    gap: 25px;
+    width: max-content;
+    animation: scroll 40s linear infinite;
+}
+
+.score-box {
+    min-width: 320px;
+    background: none;
+    border-radius: 18px;
+    padding: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.score-box:hover {
+    transform: scale(1.05);
+}
+
+.teams {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.score {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin: 10px 0;
+}
+
+.minute {
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
     }
 }
