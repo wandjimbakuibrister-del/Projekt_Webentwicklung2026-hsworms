@@ -102,8 +102,8 @@ div.header-container {
 nav {
     display: none;
     position: absolute;
-    top: 90px;
-    right: 16px;
+    top: 95px;
+    right: 2px;
     background-color: rgb(2, 6, 23);
     border: 1px solid rgba(255, 215, 0, 0.25);
     border-radius: 8px;
@@ -157,6 +157,15 @@ nav a:active {
 }
 
 /*Foto im Background vom Startseite */
+.text-section1 button{
+    border-radius: 8px;
+    color: gold;
+    background-color: #020a1f;
+    font-family: "Bebas Neue", sans-serif;
+    padding: 8px;
+    margin: 10px 0 ;
+
+}
 .text-section1 {
     background-image: url("./New_Fotos/header.jpg.png");
     background-size: contain;
@@ -169,6 +178,7 @@ nav a:active {
 }
 
 /* Code für Items-größe auf dem Hintergrundsbild */
+
 .text-section1 h1 {
     color: white;
     text-transform: uppercase;
@@ -190,11 +200,13 @@ nav a:active {
 .video-offiziel {
     padding: 12px;
     align-items: center;
+    
 }
 
 .video-offiziel video {
     width: 100%;
     border-radius: 10px;
+    border: 1px solid rgba(255, 215, 0, 0.25);
 
 }
 
@@ -430,19 +442,13 @@ p.zahl-index {
     background-color: gold;
 }
 
-.button {
-    width: 15px;
-    height: 15px;
-    border: none;
-    border-radius: 50%;
-    background-color: gold;
-    color: black;
-    font-weight: bold;
-    cursor: pointer;
-}
 
 .aside-blöcke h3:hover {
     color: gold;
+}
+.clickable{
+    text-decoration: none;
+    color: white;
 }
 
 
@@ -1600,6 +1606,7 @@ footer {
     font-size: 1.2rem;
     font-weight: 700;
     text-align: center;
+
 }
 
 .score {
