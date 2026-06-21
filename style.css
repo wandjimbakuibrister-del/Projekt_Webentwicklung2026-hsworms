@@ -165,7 +165,7 @@ nav a:active {
 
 .text-section1 {
     background-image: url("./New_Fotos/header.jpg.png");
-    background-size:contain;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
@@ -185,6 +185,7 @@ nav a:active {
     font-family: "Bebas Neue", sans-serif;
     font-size: 12px;
 }
+
 .text-section1 h1 {
     font-size: 1.5rem;
 }
@@ -880,7 +881,7 @@ footer li:hover {
         margin: 0 auto;
     }
 
-    .countdown-section h2 {
+    .countdown-section h1 {
         font-size: 40px;
     }
 
@@ -1009,8 +1010,6 @@ footer li:hover {
 
 
 
-
-
 }
 
 /* Für navigationsleiste Startseite für PC */
@@ -1047,6 +1046,426 @@ footer li:hover {
         border: none;
     }
 }
+
+
+
+
+
+/* Halbfinale Seite */
+
+.attraktionen {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.attraktionen h1,
+.attraktionen>p {
+    text-align: center;
+    color: white;
+}
+
+.attraktionen h1 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.attraktionen>p {
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.attraktionen-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.attraktion-card,
+.attraktionen .news-pokal {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 215, 0, 0.25);
+    border-radius: 10px;
+}
+
+.fotonews-halbfinale,
+.fotonews-spielplan,
+.text-halbfinale,
+.attraktion-text,
+.video-finale {
+    width: 100%;
+}
+
+.fotonews-halbfinale img,
+.attraktionen .news-pokal img,
+.video-finale video {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+
+}
+
+.text-halbfinale h2,
+.attraktion-text h2 {
+    color: gold;
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.text-halbfinale p,
+.attraktion-text p,
+.hotel-details {
+    color: white;
+    font-size: 15px;
+}
+
+.hotel-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 12px 0;
+}
+
+.icon {
+    margin-right: 4px;
+}
+
+/*  */
+
+/* Finale */
+.grossblock-finale {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.block-finale,
+.messi-video {
+    width: 100%;
+}
+
+.block-finale img,
+.messi-video video {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid rgba(255, 215, 0, 0.25);
+    border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+    .grossblock-finale {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 20px;
+        border: 1px solid rgba(255, 215, 0, 0.25);
+        border-radius: 10px;
+        ;
+    }
+    .block-finale img{
+        height: 398px;
+    }
+
+    /* halbfinale */
+    .attraktionen-container>.attraktion-card {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .fotonews-halbfinale img {
+        border-radius: 10px;
+        height: 100%;
+    }
+    .video-finale video{
+        height: 100%;
+    }
+
+    .text-halbfinale {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-left: 1px solid rgba(255, 215, 0, 0.25);
+        border-right: 1px solid rgba(255, 215, 0, 0.25);
+        padding: 10px;
+    }
+
+    .text-halbfinale h2 {
+        font-size: 50px;
+
+    }
+
+    .text-halbfinale p,
+    .text-halbfinale div {
+        font-size: 20px;
+    }
+    
+    .attraktionen-container .news-pokal{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: -5px;
+    }
+    .attraktion-text{ 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        h2{
+            font-size: 50px;
+        }
+        p,div{
+            font-size: 20px;
+        }
+        a{
+            text-decoration: none;
+        }
+    }
+    /*achtelfinale video und foto */
+    .new-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-family: "Bebas Neue", sans-serif;
+        p,div{
+            font-size: 20px;
+        }
+        
+
+    }
+    /* Spielplan */
+    .News-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+          p{
+            font-size: 20px;
+        }
+        
+    }
+
+
+}
+
+/* Quiz */
+#quiz-index #karte1 {
+    background-image: url("./New_Fotos/stadionquiz.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#quiz-index #karte2 {
+    background-image: url("./New_Fotos/gruppenquiz.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#quiz-index #karte3 {
+    background-image: url("./New_Fotos/pokal-quiz.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Block unter kärtchen in Quiz */
+
+.quiz-unter img {
+    width: 50px;
+}
+
+.quiz-unter {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    border: 1px solid rgba(255, 215, 0, 0.25);
+    gap: 10px;
+    margin: 10px 10px;
+    border-radius: 5px;
+}
+
+.erster-block {
+    display: flex;
+    flex-direction: row;
+    font-size: 10px;
+    border-bottom: 1px solid rgba(255, 215, 0, 0.25);
+    padding: 10px;
+}
+
+.quiz-titel {
+    color: gold;
+    font-family: "Bebas Neue", sans-serif;
+    text-transform: uppercase;
+}
+
+
+.quiz-box {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 14px;
+    background-color: rgb(3, 18, 45);
+}
+
+.quiz-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.frage-status,
+.punkte-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: gold;
+    font-weight: bold;
+}
+
+.progress {
+    width: 40%;
+    height: 100%;
+    background-color: gold;
+    border-radius: 20px;
+}
+
+.quiz-frage {
+    font-size: 28px;
+    margin: 25px 0;
+}
+
+.antworten {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+}
+
+.antwort-btn {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 12px;
+    border: 1px solid gold;
+    border-radius: 10px;
+    background: transparent;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.buchstabe {
+    width: 35px;
+    height: 35px;
+    border: 1px solid gold;
+    border-radius: 50%;
+    color: rgb(255, 188, 45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.pruefen-btn {
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: gold;
+    color: rgb(2, 6, 23);
+    font-weight: gold;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .antworten {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pruefen-btn {
+        width: 300px;
+        display: block;
+        margin: 22px auto 0;
+    }
+}
+
+
+
+/* API*/
+.ticker-container {
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 0;
+    background: linear-gradient(90deg, #0f172a, #1e293b);
+}
+
+.ticker {
+    display: flex;
+    gap: 25px;
+    width: max-content;
+    animation: scroll 40s linear infinite;
+}
+
+.score-box {
+    min-width: 320px;
+    background: none;
+    border-radius: 18px;
+    padding: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.score-box:hover {
+    transform: scale(1.05);
+}
+
+.teams {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+.score {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin: 10px 0;
+}
+
+.minute {
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+
 
 
 
@@ -1262,409 +1681,4 @@ footer {
     /* Unterstreicht den Link beim Drüberfahren */
     color: #ffcc00;
     /* Optionale Farbänderung beim Hovern */
-}
-
-
-/* Halbfinale Seite */
-
-.attraktionen {
-    width: 100%;
-    padding: 15px;
-    box-sizing: border-box;
-    font-family: "Bebas Neue", sans-serif;
-}
-
-.attraktionen h1,
-.attraktionen>p {
-    text-align: center;
-    color: white;
-}
-
-.attraktionen h1 {
-    font-size: 26px;
-    margin-bottom: 10px;
-}
-
-.attraktionen>p {
-    font-size: 16px;
-    margin-bottom: 25px;
-}
-
-.attraktionen-container {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-}
-
-.attraktion-card,
-.attraktionen .news-pokal {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 15px;
-    padding: 12px;
-    box-sizing: border-box;
-    border: 1px solid rgba(255, 215, 0, 0.25);
-    border-radius: 10px;
-}
-
-.fotonews-halbfinale,
-.fotonews-spielplan,
-.text-halbfinale,
-.attraktion-text,
-.video-finale {
-    width: 100%;
-}
-
-.fotonews-halbfinale img,
-.attraktionen .news-pokal img,
-.video-finale video {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 10px;
-
-}
-
-.text-halbfinale h2,
-.attraktion-text h2 {
-    color: gold;
-    font-size: 22px;
-    margin-bottom: 8px;
-}
-
-.text-halbfinale p,
-.attraktion-text p,
-.hotel-details {
-    color: white;
-    font-size: 15px;
-}
-
-.hotel-details {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin: 12px 0;
-}
-
-.icon {
-    margin-right: 4px;
-}
-
-@media (min-width: 768px) {
-    .attraktionen {
-        padding: 30px;
-    }
-
-    .attraktionen h1 {
-        font-size: 42px;
-        text-align: center;
-    }
-
-    .attraktionen>p {
-        font-size: 20px;
-        text-align: center;
-    }
-
-    .attraktionen-container {
-        width: 100%;
-        max-width: 1200px;
-        margin-inline: auto;
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-
-    .attraktion-card,
-    .attraktionen .news-pokal {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        padding: 20px;
-        box-sizing: border-box;
-    }
-
-    .fotonews-halbfinale,
-    .fotonews-spielplan,
-    .text-halbfinale,
-    .attraktion-text,
-    .video-finale {
-        width: 100%;
-    }
-
-    .fotonews-halbfinale img,
-    .fotonews-spielplan img,
-    .attraktionen .news-pokal>img,
-    .video-finale video {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-        display: block;
-        border-radius: 10px;
-    }
-
-    .text-halbfinale,
-    .attraktion-text {
-        text-align: left;
-    }
-
-    .text-halbfinale h2,
-    .attraktion-text h2 {
-        font-size: 32px;
-        margin-top: 0;
-    }
-
-    .text-halbfinale p,
-    .attraktion-text p,
-    .hotel-details {
-        font-size: 18px;
-    }
-}
-
-/* Finale */
-.grossblock-finale {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 15px;
-    padding: 15px;
-    box-sizing: border-box;
-}
-
-.block-finale,
-.messi-video {
-    width: 100%;
-}
-
-.block-finale img,
-.messi-video video {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    display: block;
-    border: 1px solid rgba(255, 215, 0, 0.25);
-    border-radius: 10px;
-}
-
-@media (min-width: 768px) {
-    .grossblock-finale {
-        grid-template-columns: repeat(2, 1fr);
-        align-items: center;
-        gap: 25px;
-        padding: 30px;
-    }
-
-    /* .block-finale img{
-        height:205px;
-    } */
-}
-
-/* Quiz */
-#quiz-index #karte1 {
-    background-image: url("./New_Fotos/stadionquiz.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-#quiz-index #karte2 {
-    background-image: url("./New_Fotos/gruppenquiz.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-#quiz-index #karte3 {
-    background-image: url("./New_Fotos/pokal-quiz.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-/* Block unter kärtchen in Quiz */
-
-.quiz-unter img {
-    width: 50px;
-}
-
-.quiz-unter {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    border: 1px solid rgba(255, 215, 0, 0.25);
-    gap: 10px;
-    margin: 10px 10px;
-    border-radius: 5px;
-}
-
-.erster-block {
-    display: flex;
-    flex-direction: row;
-    font-size: 10px;
-    border-bottom: 1px solid rgba(255, 215, 0, 0.25);
-    padding: 10px;
-}
-
-.quiz-titel {
-    color: gold;
-    font-family: "Bebas Neue", sans-serif;
-    text-transform: uppercase;
-}
-
-
-.quiz-box {
-    max-width: 900px;
-    margin: 30px auto;
-    padding: 20px;
-    border-radius: 14px;
-    background-color: rgb(3, 18, 45);
-}
-
-.quiz-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 15px;
-}
-
-.frage-status,
-.punkte-box {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    color: gold;
-    font-weight: bold;
-}
-
-.progress {
-    width: 40%;
-    height: 100%;
-    background-color: gold;
-    border-radius: 20px;
-}
-
-.quiz-frage {
-    font-size: 28px;
-    margin: 25px 0;
-}
-
-.antworten {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 12px;
-}
-
-.antwort-btn {
-    display: flex;
-    align-items: center;
-    gap: 18px;
-    padding: 12px;
-    border: 1px solid gold;
-    border-radius: 10px;
-    background: transparent;
-    color: white;
-    font-size: 18px;
-    cursor: pointer;
-}
-
-.buchstabe {
-    width: 35px;
-    height: 35px;
-    border: 1px solid gold;
-    border-radius: 50%;
-    color: rgb(255, 188, 45);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-}
-
-.pruefen-btn {
-    width: 100%;
-    margin-top: 20px;
-    padding: 15px;
-    border: none;
-    border-radius: 10px;
-    background-color: gold;
-    color: rgb(2, 6, 23);
-    font-weight: gold;
-    font-size: 18px;
-    cursor: pointer;
-}
-
-@media (min-width: 768px) {
-    .antworten {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .pruefen-btn {
-        width: 300px;
-        display: block;
-        margin: 22px auto 0;
-    }
-}
-
-
-
-/* API*/
-.ticker-container {
-    width: 100%;
-    overflow: hidden;
-    padding: 20px 0;
-    background: linear-gradient(90deg, #0f172a, #1e293b);
-}
-
-.ticker {
-    display: flex;
-    gap: 25px;
-    width: max-content;
-    animation: scroll 40s linear infinite;
-}
-
-.score-box {
-    min-width: 320px;
-    background: none;
-    border-radius: 18px;
-    padding: 20px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: transform 0.3s ease;
-}
-
-.score-box:hover {
-    transform: scale(1.05);
-}
-
-.teams {
-    font-size: 1.2rem;
-    font-weight: 700;
-    text-align: center;
-
-}
-
-.score {
-    font-size: 2.5rem;
-    font-weight: 900;
-    margin: 10px 0;
-}
-
-.minute {
-    padding: 6px 12px;
-    border-radius: 999px;
-    font-size: 0.9rem;
-    font-weight: bold;
-}
-
-@keyframes scroll {
-    from {
-        transform: translateX(100%);
-    }
-
-    to {
-        transform: translateX(-100%);
-    }
 }
