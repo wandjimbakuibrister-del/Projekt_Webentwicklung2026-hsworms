@@ -1,474 +1,278 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>
-        WM 2026 Achtelfinale – Paarungen, Spielplan und Ergebnisse
-    </title>
-    <meta name="description"
-        content="Das Achtelfinale der Fußball-WM 2026 mit allen Paarungen, Terminen, Stadien und qualifizierten Teams.">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WM 2026 Achtelfinale – Paarungen, Spielplan und Ergebnisse</title>
+    <meta name="description" content="Das Achtelfinale der Fußball-WM 2026 mit allen Paarungen, Terminen, Stadien und qualifizierten Teams.">
 
     <meta property="og:title" content="WM 2026 Achtelfinale – Paarungen und Spielplan">
-    <meta property="og:description"
-        content="Das Achtelfinale der Fußball-WM 2026 mit allen Paarungen, Terminen, Stadien und qualifizierten Teams.">
+    <meta property="og:description" content="Das Achtelfinale der Fußball-WM 2026 mit allen Paarungen, Terminen, Stadien und qualifizierten Teams.">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="de_DE">
     <meta property="og:image" content="./New_Fotos/globale.jpeg">
 
-    <link href="style.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="https://www.api-football.com/public/img/favicon.ico">
 </head>
 
 <body class="achtelfinale-seite">
     <header class="index-seite">
         <div class="header-container" id="logo-links">
-            <img alt="World cup 2026 logo" src="./New_Fotos/pokal-logo.png" width="200px" />
-            <h1>
-                FUSSBALL
-                <br />
+            <img alt="World Cup 2026 Logo" src="./New_Fotos/pokal-logo.png">
+            <h1 class="header-title">
+                FUSSBALL<br>
                 WELTMEISTERSCHAFT
-                <div class="jahr">
-                    2026
-                </div>
+                <strong class="jahr">2026</strong>
             </h1>
         </div>
-        <button class="burger" id="burgerBtn">
+        <button class="burger" id="burgerBtn" type="button">
             ☰
         </button>
         <nav id="navMenu">
             <ul>
-                <li>
-                    <a href="./index.html">
-                        STARTSEITE
-                    </a>
-                </li>
-                <li>
-                    <a href="./spielplan.html">
-                        SPIELPLAN
-                    </a>
-                </li>
-                <li>
-                    <a href="./gruppen.html">
-                        GRUPPEN
-                    </a>
-                </li>
-                <li>
-                    <a href="./quiz.html">
-                        QUIZ
-                    </a>
-                </li>
+                <li><a href="./index.html">STARTSEITE</a></li>
+                <li><a href="./spielplan.html">SPIELPLAN</a></li>
+                <li><a href="./gruppen.html">GRUPPEN</a></li>
+                <li><a href="./quiz.html">QUIZ</a></li>
             </ul>
         </nav>
     </header>
+
     <main class="spielplan-background">
         <section class="spielplan-header" id="Anf-Stop">
-            <img alt="kalender logo" src="./logo/kalender.jpg.png" width="100px" />
+            <img alt="Kalender Logo" src="./logo/kalender.jpg.png">
             <div class="header-content">
-                <h1>
-                    ACHTELFINALE
-                </h1>
-                <p>
-                    Spiele, Termine und Stadien im Überblick
-                </p>
+                <h1>ACHTELFINALE</h1>
+                <p>Spiele, Termine und Stadien im Überblick</p>
             </div>
         </section>
-        <section class="filter-section">
 
+        <div class="filter-section">
             <ul>
-                <li>
-                    <a href="spielplan.html">
-                        GRUPPENPHASE
-                    </a>
-                </li>
-                <li>
-                    <a href="achtelfinale.html">
-                        ACHTELFINALE
-                    </a>
-                </li>
-                <li>
-                    <a href="viertelfinale.html">
-                        VIERTELFINALE
-                    </a>
-                </li>
-                <li>
-                    <a href="halbfinale.html">
-                        HALBFINALE
-                    </a>
-                </li>
-                <li>
-                    <a href="finale.html">
-                        FINALE
-                    </a>
-                </li>
+                <li><a href="spielplan.html">GRUPPENPHASE</a></li>
+                <li><a href="achtelfinale.html">ACHTELFINALE</a></li>
+                <li><a href="viertelfinale.html">VIERTELFINALE</a></li>
+                <li><a href="halbfinale.html">HALBFINALE</a></li>
+                <li><a href="finale.html">FINALE</a></li>
             </ul>
+        </div>
 
-        </section>
-        <section class="spielplan-section">
+        <div class="spielplan-section">
             <table class="spielplan-table">
                 <tbody>
                     <tr>
-                        <td colspan="5">
+                        <td>
                             <div class="spiel-card">
                                 <div class="spiel-links">
-                                    <p class="gruppe">
-                                        Achtelfinale 1
-                                    </p>
-                                    <div class="mannschaft">
-                                        <span>
-                                            Qualifikant 1
-                                        </span>
-                                    </div>
-                                    <div class="mannschaft">
-                                        <span>
-                                            Qualifikant 2
-                                        </span>
-                                    </div>
+                                    <p class="gruppe">Achtelfinale 1</p>
+                                    <div class="mannschaft"><span>Qualifikant 1</span></div>
+                                    <div class="mannschaft"><span>Qualifikant 2</span></div>
                                 </div>
                                 <div class="spiel-rechts">
-                                    <p>
-                                        Sa., 4.7.
-                                    </p>
-                                    <p>
-                                        19:00
-                                    </p>
+                                    <p>Sa., 4.7.</p>
+                                    <p>19:00</p>
                                 </div>
                                 <div class="spiel-stadion">
-                                    <p>
-                                        Houston Stadium
-                                    </p>
+                                    <p>Houston Stadium</p>
                                 </div>
                             </div>
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="5">
+                        <td>
                             <div class="spiel-card">
                                 <div class="spiel-links">
-                                    <p class="gruppe">
-                                        Achtelfinale 2
-                                    </p>
-                                    <div class="mannschaft">
-                                        <span>
-                                            Qualifikant 3
-                                        </span>
-                                    </div>
-                                    <div class="mannschaft">
-                                        <span>
-                                            Qualifikant 4
-                                        </span>
-                                    </div>
+                                    <p class="gruppe">Achtelfinale 2</p>
+                                    <div class="mannschaft"><span>Qualifikant 3</span></div>
+                                    <div class="mannschaft"><span>Qualifikant 4</span></div>
                                 </div>
                                 <div class="spiel-rechts">
-                                    <p>
-                                        Sa., 4.7.
-                                    </p>
-                                    <p>
-                                        23:00
-                                    </p>
+                                    <p>Sa., 4.7.</p>
+                                    <p>23:00</p>
                                 </div>
                                 <div class="spiel-stadion">
-                                    <p>
-                                        Philadelphia Stadium
-                                    </p>
+                                    <p>Philadelphia Stadium</p>
                                 </div>
                             </div>
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="5">
+                        <td>
                             <div class="spiel-card">
                                 <div class="spiel-links">
-                                    <p class="gruppe">
-                                        Achtelfinale 3
-                                    </p>
-                                    <div class="mannschaft">
-                                        <span>
-                                            Qualifikant 5
-                                        </span>
-                                    </div>
-                                    <div class="mannschaft">
-                                        <span>
-                                            Qualifikant 6
-                                        </span>
-                                    </div>
+                                    <p class="gruppe">Achtelfinale 3</p>
+                                    <div class="mannschaft"><span>Qualifikant 5</span></div>
+                                    <div class="mannschaft"><span>Qualifikant 6</span></div>
                                 </div>
                                 <div class="spiel-rechts">
-                                    <p>
-                                        So., 5.7.
-                                    </p>
-                                    <p>
-                                        22:00
-                                    </p>
+                                    <p>So., 5.7.</p>
+                                    <p>22:00</p>
                                 </div>
                                 <div class="spiel-stadion">
-                                    <p>
-                                        New York / New Jersey Stadium
-                                    </p>
+                                    <p>New York / New Jersey Stadium</p>
                                 </div>
                             </div>
                         </td>
                     </tr>
                     <tr class="extra-achtel">
-                        <td colspan="5">
+                        <td>
                             <div class="spiel-card">
                                 <div class="spiel-links">
-                                    <p class="gruppe">
-                                        Achtelfinale 4
-                                    </p>
-                                    <div class="mannschaft">
-                                        <span>
-                                            Qualifikant 7
-                                        </span>
-                                    </div>
-                                    <div class="mannschaft">
-                                        <span>
-                                            Qualifikant 8
-                                        </span>
-                                    </div>
+                                    <p class="gruppe">Achtelfinale 4</p>
+                                    <div class="mannschaft"><span>Qualifikant 7</span></div>
+                                    <div class="mannschaft"><span>Qualifikant 8</span></div>
                                 </div>
                                 <div class="spiel-rechts">
-                                    <p>
-                                        Mo., 6.7.
-                                    </p>
-                                    <p>
-                                        02:00
-                                    </p>
+                                    <p>Mo., 6.7.</p>
+                                    <p>02:00</p>
                                 </div>
                                 <div class="spiel-stadion">
-                                    <p>
-                                        Mexico City Stadium
-                                    </p>
+                                    <p>Mexico City Stadium</p>
                                 </div>
                             </div>
                         </td>
                     </tr>
                     <tr class="extra-achtel">
-                        <td colspan="5">
+                        <td>
                             <div class="spiel-card">
                                 <div class="spiel-links">
-                                    <p class="gruppe">
-                                        Achtelfinale 5
-                                    </p>
-                                    <div class="mannschaft">
-                                        <span>
-                                            Qualifikant 9
-                                        </span>
-                                    </div>
-                                    <div class="mannschaft">
-                                        <span>
-                                            Qualifikant 10
-                                        </span>
-                                    </div>
+                                    <p class="gruppe">Achtelfinale 5</p>
+                                    <div class="mannschaft"><span>Qualifikant 9</span></div>
+                                    <div class="mannschaft"><span>Qualifikant 10</span></div>
                                 </div>
                                 <div class="spiel-rechts">
-                                    <p>
-                                        Mo., 6.7.
-                                    </p>
-                                    <p>
-                                        21:00
-                                    </p>
+                                    <p>Mo., 6.7.</p>
+                                    <p>21:00</p>
                                 </div>
                                 <div class="spiel-stadion">
-                                    <p>
-                                        Dallas Stadium
-                                    </p>
+                                    <p>Dallas Stadium</p>
                                 </div>
                             </div>
                         </td>
                     </tr>
                     <tr class="extra-achtel">
-                        <td colspan="5">
+                        <td>
                             <div class="spiel-card">
                                 <div class="spiel-links">
-                                    <p class="gruppe">
-                                        Achtelfinale 6
-                                    </p>
-                                    <div class="mannschaft">
-                                        <span>
-                                            Qualifikant 11
-                                        </span>
-                                    </div>
-                                    <div class="mannschaft">
-                                        <span>
-                                            Qualifikant 12
-                                        </span>
-                                    </div>
+                                    <p class="gruppe">Achtelfinale 6</p>
+                                    <div class="mannschaft"><span>Qualifikant 11</span></div>
+                                    <div class="mannschaft"><span>Qualifikant 12</span></div>
                                 </div>
                                 <div class="spiel-rechts">
-                                    <p>
-                                        Di., 7.7.
-                                    </p>
-                                    <p>
-                                        02:00
-                                    </p>
+                                    <p>Di., 7.7.</p>
+                                    <p>02:00</p>
                                 </div>
                                 <div class="spiel-stadion">
-                                    <p>
-                                        Seattle Stadium
-                                    </p>
+                                    <p>Seattle Stadium</p>
                                 </div>
                             </div>
                         </td>
                     </tr>
                     <tr class="extra-achtel">
-                        <td colspan="5">
+                        <td>
                             <div class="spiel-card">
                                 <div class="spiel-links">
-                                    <p class="gruppe">
-                                        Achtelfinale 7
-                                    </p>
-                                    <div class="mannschaft">
-                                        <span>
-                                            Qualifikant 13
-                                        </span>
-                                    </div>
-                                    <div class="mannschaft">
-                                        <span>
-                                            Qualifikant 14
-                                        </span>
-                                    </div>
+                                    <p class="gruppe">Achtelfinale 7</p>
+                                    <div class="mannschaft"><span>Qualifikant 13</span></div>
+                                    <div class="mannschaft"><span>Qualifikant 14</span></div>
                                 </div>
                                 <div class="spiel-rechts">
-                                    <p>
-                                        Di., 7.7.
-                                    </p>
-                                    <p>
-                                        18:00
-                                    </p>
+                                    <p>Di., 7.7.</p>
+                                    <p>18:00</p>
                                 </div>
                                 <div class="spiel-stadion">
-                                    <p>
-                                        Atlanta Stadium
-                                    </p>
+                                    <p>Atlanta Stadium</p>
                                 </div>
                             </div>
                         </td>
                     </tr>
                     <tr class="extra-achtel">
-                        <td colspan="5">
+                        <td>
                             <div class="spiel-card">
                                 <div class="spiel-links">
-                                    <p class="gruppe">
-                                        Achtelfinale 8
-                                    </p>
-                                    <div class="mannschaft">
-                                        <span>
-                                            Qualifikant 15
-                                        </span>
-                                    </div>
-                                    <div class="mannschaft">
-                                        <span>
-                                            Qualifikant 16
-                                        </span>
-                                    </div>
+                                    <p class="gruppe">Achtelfinale 8</p>
+                                    <div class="mannschaft"><span>Qualifikant 15</span></div>
+                                    <div class="mannschaft"><span>Qualifikant 16</span></div>
                                 </div>
                                 <div class="spiel-rechts">
-                                    <p>
-                                        Di., 7.7.
-                                    </p>
-                                    <p>
-                                        22:00
-                                    </p>
+                                    <p>Di., 7.7.</p>
+                                    <p>22:00</p>
                                 </div>
                                 <div class="spiel-stadion">
-                                    <p>
-                                        BC Place Vancouver
-                                    </p>
+                                    <p>BC Place Vancouver</p>
                                 </div>
                             </div>
                         </td>
                     </tr>
                 </tbody>
             </table>
-        </section>
+        </div>
+
         <section class="news-pokal">
             <div class="Fotonews-spielplan">
-                <img alt="hotel logo" src="./New_Fotos/hotel.png" width="400px" />
+                <img alt="Hotel Logo" src="./New_Fotos/hotel.png">
             </div>
             <div class="new-text">
-                <h1 id="foto-mittelfeld">
-                    Hotels in den Gastgeberstädten
-                </h1>
+                <h1 id="foto-mittelfeld">Hotels in den Gastgeberstädten</h1>
                 <p>
                     Planen Sie Ihren Aufenthalt während des FIFA World Cup 2026? Entdecken Sie eine Auswahl an Hotels in
-                    den
-                    <br />
+                    den<br>
                     Gastgeberstädten, um Ihren Besuch unvergesslich zu machen. Von luxuriösen Unterkünften bis hin zu
-                    gemütlichen Pensionen
-                    <br />
-                    finden Sie die perfekte Unterkunft für Ihre Reise zum größten Fußballereignis
-                    der
-                    Welt.
+                    gemütlichen Pensionen<br>
+                    finden Sie die perfekte Unterkunft für Ihre Reise zum größten Fußballereignis der Welt.
                 </p>
                 <div class="hotel-details">
-                    <span class="icon">
-                        📍
-                    </span>
+                    <span class="icon">📍</span>
                     Nahe am Stadion
-                    <span class="icon">
-                        📶
-                    </span>
+                    <span class="icon">📶</span>
                     Kostenloses WLAN
-                    <span class="icon">
-                        🔄
-                    </span>
+                    <span class="icon">🔄</span>
                     Flexible Stornierung
                 </div>
 
-                <a class="news-link"
+                <a class="news-link mehr-btn"
                     href="https://www.booking.com/searchresults.de.html?aid=304142&amp;label=gen173nr-1FCAEoggI46AdIM1gEaLsBiAEBmAExuAEHyAEM2AEB6AEB-AECiAIBqAIDuAKW9sGMBsACAdICJDRiYjE4YjAtODQ0ZC00ZDE3LWJkYjQtYjE5N2E4ZDEyM2AIG4AIB&amp;sid=8c7b8e5c9d9e7f0b8c8e5c9d9e7f0b8&amp;tmpl=searchresults&amp;checkin_month=11&amp;checkin_monthday=20&amp;checkin_year=2026&amp;checkout_month=11&amp;checkout_monthday=30&amp;checkout_year=2026&amp;class_interval=1&amp;dest_id=-2140479&amp;dest_type=city&amp;group_adults=2&amp;group_children=0&amp;iata=NYC&amp;label_click=undef&amp;mrfid=304142&amp;no_rooms=1&amp;order=price_for_two&amp;postcard=0&amp;raw_dest_type=city&amp;sacat=0&amp;saref=304142&amp;sb_price_type=total&amp;type=total&amp;ucfs=1&amp;chal_t=1780008591040&amp;force_referer=#hotelTmpl">
-                    <button class="mehr-btn">
-                        Hotels Finden →
-                    </button>
+                    Hotels Finden →
                 </a>
             </div>
         </section>
     </main>
-    <script src="script.js">
-    </script>
+
+    <footer>
+        <div class="footer-logos">
+            <a class="fifa" href="https://www.fifa.com/de">
+                <h1>FIFA</h1>
+            </a>
+            <a href="https://x.com/FIFAcom"><img src="https://cdn.simpleicons.org/x/w40/white" alt="X Logo"></a>
+            <a href="https://www.facebook.com/fifa"><img src="https://cdn.simpleicons.org/instagram/white" alt="Instagram Logo"></a>
+            <a href="https://www.instagram.com/fifaworldcup"><img src="https://cdn.simpleicons.org/facebook/white" alt="Facebook Logo"></a>
+            <a href="https://www.youtube.com/FIFATV"><img src="https://cdn.simpleicons.org/youtube/white" alt="YouTube Logo"></a>
+            <a href="https://www.tiktok.com/@fifaworldcup"><img src="https://cdn.simpleicons.org/whatsapp/white" alt="WhatsApp Logo"></a>
+        </div>
+        <hr>
+        <div class="partner-logos">
+            <a href="https://www.adidas.de/fussball"><img src="https://cdn.simpleicons.org/adidas/white" alt="Adidas Logo"></a>
+            <a href="https://www.coca-cola.com/de/de"><img src="https://cdn.simpleicons.org/cocacola/white" alt="Coca-Cola Logo"></a>
+            <a href="https://www.hyundaimotorgroup.com/en/main/mainRecommend"><img src="https://cdn.simpleicons.org/kia/white" alt="Kia Logo"></a>
+            <a href="https://www.lenovo.com/de/de/"><img src="https://cdn.simpleicons.org/lenovo/white" alt="Lenovo Logo"></a>
+            <a href="https://www.qatarairways.com/de-de/homepage.html"><img src="https://cdn.simpleicons.org/qatarairways/white" alt="Qatar Airways Logo"></a>
+            <a href="https://www.qatarairways.com/de-de/homepage.html"><img src="https://cdn.simpleicons.org/visa/white" alt="Visa Logo"></a>
+        </div>
+        <hr>
+        <div class="navigation-impressum">
+            <ul>
+                <li><a href="./index.html">STARTSEITE</a></li>
+                <li><a href="./spielplan.html">SPIELPLAN</a></li>
+                <li><a href="./gruppen.html">GRUPPEN</a></li>
+                <li><a href="./quiz.html">QUIZ</a></li>
+            </ul>
+            <p>FIFA 2026-Projekt</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-<footer>
-    <div class="footer-logos">
-        <a class="fifa" href="https://www.fifa.com/de">
-            <h1>FIFA</h1>
-        </a>
-        <a href="https://x.com/FIFAcom"><img src="https://cdn.simpleicons.org/x/w40/white" alt="X Logo"></a>
-        <a href="https://www.facebook.com/fifa"><img src="https://cdn.simpleicons.org/instagram/white"
-                alt="Instagram Logo"></a>
-        <a href="https://www.instagram.com/fifaworldcup"><img src="https://cdn.simpleicons.org/facebook/white"
-                alt="Facebook Logo"></a>
-        <a href="https://www.youtube.com/FIFATV"><img src="https://cdn.simpleicons.org/youtube/white"
-                alt="YouTube Logo"></a>
-        <a href="https://www.tiktok.com/@fifaworldcup"><img src="https://cdn.simpleicons.org/whatsapp/white"
-                alt="WhatsApp Logo"></a>
-    </div>
-    <hr>
-    <div class="partner-logos">
-        <a href="https://www.adidas.de/fussball"><img src="https://cdn.simpleicons.org/adidas/white"
-                alt="Adidas Logo"></a>
-        <a href="https://www.coca-cola.com/de/de"><img src="https://cdn.simpleicons.org/cocacola/white"
-                alt="Coca-Cola Logo"></a>
-        <a href="https://www.hyundaimotorgroup.com/en/main/mainRecommend"><img
-                src="https://cdn.simpleicons.org/kia/white" alt="Kia Logo"></a>
-        <a href="https://www.lenovo.com/de/de/"><img src="https://cdn.simpleicons.org/lenovo/white"
-                alt="Lenovo Logo"></a>
-        <a href="https://www.qatarairways.com/de-de/homepage.html"><img
-                src="https://cdn.simpleicons.org/qatarairways/white" alt="Qatar Airways Logo"></a>
-        <a href="https://www.qatarairways.com/de-de/homepage.html"><img src="https://cdn.simpleicons.org/visa/white"
-                alt="Visa Logo"></a>
-    </div>
-    <hr>
-    <div class="navigation-impressum">
-        <ul>
-            <li><a href="./index.html">STARTSEITE</a></li>
-            <li><a href="./spielplan.html">SPIELPLAN</a></li>
-            <li><a href="./gruppen.html">GRUPPEN</a></li>
-            <li><a href="./quiz.html">QUIZ</a></li>
-        </ul>
-        <p>FIFA 2026-Projekt</p>
-    </div>
-</footer>
 
 </html>

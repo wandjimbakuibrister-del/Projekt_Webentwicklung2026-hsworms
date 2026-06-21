@@ -1,38 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>
         WM 2026 Halbfinale – Spiele, Termine und Teams
     </title>
-    <meta name="description" content="Das Halbfinale der Fußball-WM 2026 mit Spielpaarungen, Terminen, Stadien und allen wichtigen Informationen.">
-    
+    <meta name="description"
+        content="Das Halbfinale der Fußball-WM 2026 mit Spielpaarungen, Terminen, Stadien und allen wichtigen Informationen.">
+
     <meta property="og:title" content="WM 2026 Halbfinale – Spiele, Teams und Termine">
-<meta property="og:description" content="Das Halbfinale der Fußball-WM 2026 mit Spielpaarungen, Terminen, Stadien und allen wichtigen Informationen.">
-<meta property="og:type" content="website">
-<meta property="og:locale" content="de_DE">
-<meta property="og:image" content="./New_Fotos/globale.jpeg">
-    
-    <link href="style.css" rel="stylesheet" />
+    <meta property="og:description"
+        content="Das Halbfinale der Fußball-WM 2026 mit Spielpaarungen, Terminen, Stadien und allen wichtigen Informationen.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:image" content="./New_Fotos/globale.jpeg">
+
+    <link href="style.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="https://www.api-football.com/public/img/favicon.ico">
-    
+
+
+</head>
 
 <body class="halbfinale-seite">
     <header class="index-seite">
         <div class="header-container" id="logo-links">
-            <img alt="World cup 2026 logo" src="./New_Fotos/pokal-logo.png" width="200px" />
-            <h1>
-                FUSSBALL
-                <br />
+            <img alt="World cup 2026 logo" src="./New_Fotos/pokal-logo.png">
+            <h1 class="header-title">
+                FUSSBALL<br>
                 WELTMEISTERSCHAFT
-                <div class="jahr">
-                    2026
-                </div>
+                <strong class="jahr">2026</strong>
             </h1>
         </div>
-        <button class="burger" id="burgerBtn">
+        <button class="burger" id="burgerBtn" type="button">
             ☰
         </button>
         <nav id="navMenu">
@@ -62,7 +63,7 @@
     </header>
     <main class="spielplan-background">
         <section class="spielplan-header" id="Anf-Stop">
-            <img alt="kalender logo" src="./logo/kalender.jpg.png" width="100px" />
+            <img alt="kalender logo" src="./logo/kalender.jpg.png">
             <div class="header-content">
                 <h1>
                     HALBFINALE
@@ -72,7 +73,7 @@
                 </p>
             </div>
         </section>
-        <section class="filter-section">
+        <div class="filter-section">
 
             <ul>
                 <li>
@@ -102,12 +103,12 @@
                 </li>
             </ul>
 
-        </section>
-        <section class="spielplan-section">
+        </div>
+        <div class="spielplan-section">
             <table class="spielplan-table">
                 <tbody>
                     <tr>
-                        <td colspan="5">
+                        <td>
                             <div class="spiel-card">
                                 <div class="spiel-links">
                                     <p class="gruppe">
@@ -141,7 +142,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="5">
+                        <td>
                             <div class="spiel-card">
                                 <div class="spiel-links">
                                     <p class="gruppe">
@@ -176,7 +177,7 @@
                     </tr>
                 </tbody>
             </table>
-        </section>
+        </div>
         <section class="attraktionen">
             <h1>
                 Attraktionen in den Gastgeberstädten
@@ -188,7 +189,7 @@
             <div class="attraktionen-container">
                 <article class="attraktion-card">
                     <div class="fotonews-halbfinale">
-                        <img alt="Dallas Sehenswürdigkeiten" src="./New_Fotos/dallas.png" />
+                        <img alt="Dallas Sehenswürdigkeiten" src="./New_Fotos/dallas.png">
                     </div>
                     <div class="text-halbfinale">
                         <h2 class="foto-halbfinale">
@@ -212,20 +213,16 @@
                             </span>
                             Texas Live!
                         </div>
-                        <a class="new-link" href="https://www.visitdallas.com/" target="_blank">
-                            <button class="mehr-btn">
-                                Dallas entdecken
-                            </button>
-                        </a>
+                        <a class="new-link mehr-btn" href="https://www.visitdallas.com/" target="_blank" rel="noopener noreferrer">Dallas entdecken</a>
                     </div>
-                    <div class="video-finale" id=" dallas">
+                    <div class="video-finale" id="dallas">
                         <video src="./New_Fotos/fifa.mp4" controls></video>
                     </div>
                 </article>
 
                 <article class="news-pokal">
                     <div class="fotonews-spielplan"></div>
-                    <img alt="Atlanta Sehenswürdigkeiten" src="./New_Fotos/atlanta.png" width="400px" />
+                    <img alt="Atlanta Sehenswürdigkeiten" src="./New_Fotos/atlanta.png">
                     <div class="attraktion-text">
                         <h2>
                             Atlanta
@@ -248,23 +245,16 @@
                             </span>
                             Centennial Olympic Park
                         </div>
-                        <a href="https://discoveratlanta.com/" target="_blank">
-                            <button class="mehr-btn">
-                                Atlanta entdecken
-                            </button>
-                        </a>
+                        <a href="https://discoveratlanta.com/" target="_blank" class="mehr-btn" rel="noopener noreferrer">Atlanta entdecken</a>
                     </div>
                 </article>
             </div>
         </section>
     </main>
-    <script src="script.js">
-    </script>
-</body>
-<footer>
+    <footer>
     <div class="footer-logos">
         <a class="fifa" href="https://www.fifa.com/de">
-            <h1>FIFA</h1>
+            <h2>FIFA</h2>
         </a>
         <a href="https://x.com/FIFAcom"><img src="https://cdn.simpleicons.org/x/w40/white" alt="X Logo"></a>
         <a href="https://www.facebook.com/fifa"><img src="https://cdn.simpleicons.org/instagram/white"
@@ -302,5 +292,8 @@
         <p>FIFA 2026-Projekt</p>
     </div>
 </footer>
+
+    <script src="script.js"></script>
+</body>
 
 </html>

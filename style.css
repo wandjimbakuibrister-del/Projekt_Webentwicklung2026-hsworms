@@ -13,21 +13,23 @@ header {
     justify-content: space-between;
     align-items: center;
     min-height: 90px;
-    background-color: rgb(2, 6, 23); /* Dunkler Hintergrund, damit nichts durchscheint */
+    background-color: rgb(2, 6, 23);
+    /* Dunkler Hintergrund, damit nichts durchscheint */
     padding: 0 16px;
     border-bottom: 2px solid gold;
-    
+
     /* Fixierung oben am Bildschirm beim Scrollen */
-    position: fixed; 
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 9999; /* Bleibt immer über den Tabellen und Texten */
+    z-index: 9999;
+    /* Bleibt immer über den Tabellen und Texten */
 }
 
 /* Verhindert, dass der Inhalt durch den fixierten Header verdeckt wird */
 body {
-    padding-top: 95px; 
+    padding-top: 95px;
 }
 
 /* Der Container für das Stadion-Hintergrundbild */
@@ -46,9 +48,12 @@ body {
 /* Flexbox: Setzt Logo und Text sauber nebeneinander auf eine Linie */
 .gruppen-banner-content {
     display: flex;
-    flex-direction: row;    /* ➡️ Nebeneinander (Horizonal) */
-    align-items: center;    /* Vertikal zentriert */
-    gap: 20px;              /* Abstand zwischen Logo und Text */
+    flex-direction: row;
+    /* ➡️ Nebeneinander (Horizonal) */
+    align-items: center;
+    /* Vertikal zentriert */
+    gap: 20px;
+    /* Abstand zwischen Logo und Text */
     padding-left: 40px;
 }
 
@@ -62,7 +67,7 @@ body {
 /* Hält den Haupttitel über dem Untertitel */
 .banner-text {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     text-align: left;
 }
 
@@ -80,7 +85,7 @@ body {
     display: block;
 }
 
-div.header-container {
+.header-container {
     font-style: italic;
     font-family: "Bebas Neue", sans-serif;
 }
@@ -157,18 +162,10 @@ nav a:active {
 }
 
 /*Foto im Background vom Startseite */
-.text-section1 button{
-    border-radius: 8px;
-    color: gold;
-    background-color: #020a1f;
-    font-family: "Bebas Neue", sans-serif;
-    padding: 8px;
-    margin: 10px 0 ;
 
-}
 .text-section1 {
     background-image: url("./New_Fotos/header.jpg.png");
-    background-size: contain;
+    background-size:contain;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
@@ -179,12 +176,19 @@ nav a:active {
 
 /* Code für Items-größe auf dem Hintergrundsbild */
 
-.text-section1 h1 {
+.text-section1 h1,
+.header-container h1 {
+    display: flex;
+    flex-direction: column;
     color: white;
     text-transform: uppercase;
     font-family: "Bebas Neue", sans-serif;
-    font-size: 18px;
+    font-size: 12px;
 }
+.text-section1 h1 {
+    font-size: 1.5rem;
+}
+
 
 .text-section1 p {
     color: white;
@@ -200,7 +204,7 @@ nav a:active {
 .video-offiziel {
     padding: 12px;
     align-items: center;
-    
+
 }
 
 .video-offiziel video {
@@ -266,7 +270,7 @@ nav a:active {
 
 }
 
-.countdown-section h2 {
+.countdown-section h1 {
     color: gold;
     font-size: 10px;
     margin-bottom: 25px;
@@ -446,7 +450,8 @@ p.zahl-index {
 .aside-blöcke h3:hover {
     color: gold;
 }
-.clickable{
+
+.clickable {
     text-decoration: none;
     color: white;
 }
@@ -678,7 +683,8 @@ iframe,
     gap: 16px;
 }
 
-.fifa h1 {
+.fifa h1,
+.fifa h2 {
     color: white;
     font-size: 8px;
 }
@@ -727,70 +733,88 @@ footer li:hover {
 
     /* header */
     /* Logo oben links*/
-    .header-title{
+    .header-title {
         font-size: 25px;
     }
-    #logo-links img{
+
+    #logo-links img {
         width: 100px;
     }
+
     /* Element Das grösste Turnier der Welt mit Strich neben */
-    .titel-strich{
+    .titel-strich {
         width: 40%;
     }
-    .titel-strich i{
+
+    .titel-strich i {
         font-size: 1rem;
     }
+
     /* Code für Items-grösse auf dem Hintergrundsbild */
-    .text-section1 h1{
+    .text-section1 h1 {
         font-size: 4rem;
     }
-    .text-section1 .jahr{
+
+    .text-section1 .jahr {
         font-size: 5rem;
     }
+
     /* Video Ishowspeed */
-    .video-offiziel{
+    .video-offiziel {
         display: none;
     }
+
     /* Navigationsleiste */
-    .section2{
+    .section2 {
         margin-top: 20px;
     }
+
     /* section3-aside */
-    .section3-aside{
+    .section3-aside {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         margin: 10px;
     }
-    p.zahl-index{
+
+    p.zahl-index {
         font-size: 30px;
     }
-    #stadien p{
+
+    #stadien p {
         font-size: 20px;
     }
-    .section3{
+
+    .section3 {
         font-size: 15px;
         flex: 2;
     }
-    .section3 img{
+
+    .section3 img {
         width: 50px;
     }
-    #stadien{
-        border-right:1px solid rgba(255, 215, 0, 0.25);
+
+    #stadien {
+        border-right: 1px solid rgba(255, 215, 0, 0.25);
     }
+
     /* Aside style-index */
-    .aside-text h3{
+    .aside-text h3 {
         font-size: 25px;
     }
-    .aside-text p{
+
+    .aside-text p {
         font-size: 15px;
     }
-    .news-aside h3{
+
+    .news-aside h3 {
         font-size: 30px;
     }
-     aside div:nth-child(4){
+
+    aside div:nth-child(4) {
         border-bottom: none;
     }
-    .aside{
+
+    .aside {
         flex: 1;
     }
 
@@ -955,7 +979,8 @@ footer li:hover {
         gap: 16px;
     }
 
-    .fifa h1 {
+    .fifa h1,
+    .fifa h2 {
         font-size: 30px;
     }
 
@@ -1039,6 +1064,7 @@ footer li:hover {
 .banner-text {
     text-align: left;
 }
+
 /* On s'assure que le titre reste bien en blanc pur */
 .titel-strich-gruppen {
     font-family: 'Bebas Neue', Arial, sans-serif;
@@ -1220,16 +1246,22 @@ footer {
 /* Styling für die neuen Links in den Info-Blöcken */
 .box-link {
     display: inline-block;
-    margin-top: 10px;        /* Abstand nach oben zum Text */
-    color: #ffffff;          /* Textfarbe auf Weiß setzen */
-    text-decoration: none;   /* Entfernt den Standard-Unterstrich */
-    font-weight: bold;       /* Macht den Text fett */
+    margin-top: 10px;
+    /* Abstand nach oben zum Text */
+    color: #ffffff;
+    /* Textfarbe auf Weiß setzen */
+    text-decoration: none;
+    /* Entfernt den Standard-Unterstrich */
+    font-weight: bold;
+    /* Macht den Text fett */
 }
 
 /* Hover-Effekt aus dem Kurs */
 .box-link:hover {
-    text-decoration: underline; /* Unterstreicht den Link beim Drüberfahren */
-    color: #ffcc00;             /* Optionale Farbänderung beim Hovern */
+    text-decoration: underline;
+    /* Unterstreicht den Link beim Drüberfahren */
+    color: #ffcc00;
+    /* Optionale Farbänderung beim Hovern */
 }
 
 
@@ -1429,15 +1461,16 @@ footer {
         height:205px;
     } */
 }
+
 /* Quiz */
- #quiz-index #karte1 {
+#quiz-index #karte1 {
     background-image: url("./New_Fotos/stadionquiz.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
- #quiz-index #karte2 {
+#quiz-index #karte2 {
     background-image: url("./New_Fotos/gruppenquiz.png");
     background-size: cover;
     background-position: center;
@@ -1456,6 +1489,7 @@ footer {
 .quiz-unter img {
     width: 50px;
 }
+
 .quiz-unter {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -1464,14 +1498,16 @@ footer {
     margin: 10px 10px;
     border-radius: 5px;
 }
-.erster-block{
+
+.erster-block {
     display: flex;
     flex-direction: row;
     font-size: 10px;
-    border-bottom:1px solid rgba(255, 215, 0, 0.25);
+    border-bottom: 1px solid rgba(255, 215, 0, 0.25);
     padding: 10px;
 }
-.quiz-titel{
+
+.quiz-titel {
     color: gold;
     font-family: "Bebas Neue", sans-serif;
     text-transform: uppercase;
@@ -1557,6 +1593,7 @@ footer {
     font-size: 18px;
     cursor: pointer;
 }
+
 @media (min-width: 768px) {
     .antworten {
         grid-template-columns: repeat(2, 1fr);
@@ -1591,7 +1628,7 @@ footer {
     background: none;
     border-radius: 18px;
     padding: 20px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1626,6 +1663,7 @@ footer {
     from {
         transform: translateX(100%);
     }
+
     to {
         transform: translateX(-100%);
     }

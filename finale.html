@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WM 2026 Finale – Datum, Stadion, Teams und Ergebnis</title>
-    
+
     <meta name="description"
         content="Alle Infos zum Finale der Fußball-WM 2026: Datum, Uhrzeit, Stadion, Teams, Ergebnis und Gewinner des Turniers.">
 
@@ -23,15 +23,15 @@
 <body class="finale-seite">
     <header class="index-seite">
         <div class="header-container" id="logo-links">
-            <img src="./New_Fotos/pokal-logo.png" alt="World cup 2026 logo" width="200px">
-            <h1>
+            <img src="./New_Fotos/pokal-logo.png" alt="World cup 2026 logo">
+            <h1 class="header-title">
                 FUSSBALL<br>
                 WELTMEISTERSCHAFT
-                <div class="jahr">2026</div>
+                <strong class="jahr">2026</strong>
             </h1>
         </div>
 
-        <button class="burger" id="burgerBtn">
+        <button class="burger" id="burgerBtn" type="button">
             ☰
         </button>
 
@@ -48,7 +48,7 @@
     <main class="spielplan-background">
 
         <section class="spielplan-header" id="Anf-Stop">
-            <img src="./logo/kalender.jpg.png" alt="kalender logo" width="100px">
+            <img src="./logo/kalender.jpg.png" alt="kalender logo">
 
             <div class="header-content">
                 <h1>FINALE</h1>
@@ -56,8 +56,7 @@
             </div>
         </section>
 
-        <section class="filter-section">
-
+        <div class="filter-section">
             <ul>
                 <li><a href="spielplan.html">GRUPPENPHASE</a></li>
                 <li><a href="achtelfinale.html">ACHTELFINALE</a></li>
@@ -65,14 +64,13 @@
                 <li><a href="halbfinale.html">HALBFINALE</a></li>
                 <li><a href="finale.html">FINALE</a></li>
             </ul>
+        </div>
 
-        </section>
-
-        <section class="spielplan-section">
+        <div class="spielplan-section">
             <table class="spielplan-table">
                 <tbody>
                     <tr>
-                        <td colspan="5">
+                        <td>
                             <div class="spiel-card">
                                 <div class="spiel-links">
                                     <p class="gruppe">Finale</p>
@@ -99,61 +97,79 @@
                     </tr>
                 </tbody>
             </table>
-        </section>
+        </div>
 
-        <section class="grossblock-finale">
+        <div class="grossblock-finale">
             <div class="block-finale">
-                <img alt="news pokal logo" src="./New_Fotos/Foto-whatapp.jpeg" />
+                <img alt="news pokal logo" src="./New_Fotos/Foto-whatapp.jpeg">
             </div>
+
             <div class="messi-video">
                 <video src="./New_Fotos/video-finale.mp4" controls></video>
             </div>
-        </section>
+        </div>
 
     </main>
 
+    <footer>
+        <div class="footer-logos">
+            <a class="fifa" href="https://www.fifa.com/de">
+                <h2>FIFA</h2>
+            </a>
+            <a href="https://x.com/FIFAcom">
+                <img src="https://cdn.simpleicons.org/x/w40/white" alt="X Logo">
+            </a>
+            <a href="https://www.facebook.com/fifa">
+                <img src="https://cdn.simpleicons.org/instagram/white" alt="Instagram Logo">
+            </a>
+            <a href="https://www.instagram.com/fifaworldcup">
+                <img src="https://cdn.simpleicons.org/facebook/white" alt="Facebook Logo">
+            </a>
+            <a href="https://www.youtube.com/FIFATV">
+                <img src="https://cdn.simpleicons.org/youtube/white" alt="YouTube Logo">
+            </a>
+            <a href="https://www.tiktok.com/@fifaworldcup">
+                <img src="https://cdn.simpleicons.org/whatsapp/white" alt="WhatsApp Logo">
+            </a>
+        </div>
+
+        <hr>
+
+        <div class="partner-logos">
+            <a href="https://www.adidas.de/fussball">
+                <img src="https://cdn.simpleicons.org/adidas/white" alt="Adidas Logo">
+            </a>
+            <a href="https://www.coca-cola.com/de/de">
+                <img src="https://cdn.simpleicons.org/cocacola/white" alt="Coca-Cola Logo">
+            </a>
+            <a href="https://www.hyundaimotorgroup.com/en/main/mainRecommend">
+                <img src="https://cdn.simpleicons.org/kia/white" alt="Kia Logo">
+            </a>
+            <a href="https://www.lenovo.com/de/de/">
+                <img src="https://cdn.simpleicons.org/lenovo/white" alt="Lenovo Logo">
+            </a>
+            <a href="https://www.qatarairways.com/de-de/homepage.html">
+                <img src="https://cdn.simpleicons.org/qatarairways/white" alt="Qatar Airways Logo">
+            </a>
+            <a href="https://www.qatarairways.com/de-de/homepage.html">
+                <img src="https://cdn.simpleicons.org/visa/white" alt="Visa Logo">
+            </a>
+        </div>
+
+        <hr>
+
+        <div class="navigation-impressum">
+            <ul>
+                <li><a href="./index.html">STARTSEITE</a></li>
+                <li><a href="./spielplan.html">SPIELPLAN</a></li>
+                <li><a href="./gruppen.html">GRUPPEN</a></li>
+                <li><a href="./quiz.html">QUIZ</a></li>
+            </ul>
+            <p>FIFA 2026-Projekt</p>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
-<footer>
-    <div class="footer-logos">
-        <a class="fifa" href="https://www.fifa.com/de">
-            <h1>FIFA</h1>
-        </a>
-        <a href="https://x.com/FIFAcom"><img src="https://cdn.simpleicons.org/x/w40/white" alt="X Logo"></a>
-        <a href="https://www.facebook.com/fifa"><img src="https://cdn.simpleicons.org/instagram/white"
-                alt="Instagram Logo"></a>
-        <a href="https://www.instagram.com/fifaworldcup"><img src="https://cdn.simpleicons.org/facebook/white"
-                alt="Facebook Logo"></a>
-        <a href="https://www.youtube.com/FIFATV"><img src="https://cdn.simpleicons.org/youtube/white"
-                alt="YouTube Logo"></a>
-        <a href="https://www.tiktok.com/@fifaworldcup"><img src="https://cdn.simpleicons.org/whatsapp/white"
-                alt="WhatsApp Logo"></a>
-    </div>
-    <hr>
-    <div class="partner-logos">
-        <a href="https://www.adidas.de/fussball"><img src="https://cdn.simpleicons.org/adidas/white"
-                alt="Adidas Logo"></a>
-        <a href="https://www.coca-cola.com/de/de"><img src="https://cdn.simpleicons.org/cocacola/white"
-                alt="Coca-Cola Logo"></a>
-        <a href="https://www.hyundaimotorgroup.com/en/main/mainRecommend"><img
-                src="https://cdn.simpleicons.org/kia/white" alt="Kia Logo"></a>
-        <a href="https://www.lenovo.com/de/de/"><img src="https://cdn.simpleicons.org/lenovo/white"
-                alt="Lenovo Logo"></a>
-        <a href="https://www.qatarairways.com/de-de/homepage.html"><img
-                src="https://cdn.simpleicons.org/qatarairways/white" alt="Qatar Airways Logo"></a>
-        <a href="https://www.qatarairways.com/de-de/homepage.html"><img src="https://cdn.simpleicons.org/visa/white"
-                alt="Visa Logo"></a>
-    </div>
-    <hr>
-    <div class="navigation-impressum">
-        <ul>
-            <li><a href="./index.html">STARTSEITE</a></li>
-            <li><a href="./spielplan.html">SPIELPLAN</a></li>
-            <li><a href="./gruppen.html">GRUPPEN</a></li>
-            <li><a href="./quiz.html">QUIZ</a></li>
-        </ul>
-        <p>FIFA 2026-Projekt</p>
-    </div>
-</footer>
 
 </html>
