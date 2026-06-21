@@ -169,7 +169,6 @@ nav a:active {
     display: flex;
     flex-direction: column;
     font-size: 18px;
-    padding: 10px;
 }
 
 /* Code für Items-größe auf dem Hintergrundsbild */
@@ -1595,6 +1594,14 @@ footer {
     }
 }
 
+@media (min-width: 801px) {
+     .spielplan-table tbody {
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        }
+    
+   
+}
 @media (min-width: 768px) {
     .antworten {
         grid-template-columns: repeat(2, 1fr);
@@ -1608,6 +1615,11 @@ footer {
 }
 /* Responsiv zwischen 768 und 1023 */
 @media (min-width: 768px) and (max-width: 1023px) {
+        .spielplan-table tbody {
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        }
+    
     *{
         font-size: 25px;
     }
