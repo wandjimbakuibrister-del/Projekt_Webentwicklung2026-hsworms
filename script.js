@@ -40,7 +40,7 @@ function toggleSpiele(buttonId, spieleKlasse) {
 
                 button.textContent = "Mehr Spiele anzeigen";
                 sichtbar = false;
-                
+
                 const section = button.closest(".spielplan-section");
 
                 if (section) {
@@ -61,11 +61,17 @@ toggleSpiele("mehrSpieleBtn2", ".extra-spiel2");
 const burgerBtn = document.getElementById("burgerBtn");
 const navMenu = document.getElementById("navMenu");
 
-if (burgerBtn && navMenu) {
-    burgerBtn.addEventListener("click", function () {
-        navMenu.classList.toggle("active");
-    });
+burgerBtn.addEventListener("click", function () {
+navMenu.classList.toggle("active");
+
+
+if (navMenu.classList.contains("active")) {
+    burgerBtn.textContent = "×";
+} else {
+    burgerBtn.textContent = "☰";
 }
+
+});
 
 // countdown
 
@@ -83,7 +89,7 @@ function countdownAktualisieren() {
     if (jetzt < startDatum) {
         zielDatum = startDatum;
         titelText = "Countdown zur Fußball-Weltmeisterschaft 2026";
-    } else if (jetzt < finaleDatum && jetzt>startDatum) {
+    } else if (jetzt < finaleDatum && jetzt > startDatum) {
         zielDatum = finaleDatum;
         titelText = "Countdown zum Finale der Fußball-Weltmeisterschaft 2026";
     } else {
@@ -121,7 +127,6 @@ function countdownAktualisieren() {
 setInterval(countdownAktualisieren, 1000);//aktualisiert den Countdown jede Sekunde
 
 countdownAktualisieren();
-
 
 
 // Quiz
