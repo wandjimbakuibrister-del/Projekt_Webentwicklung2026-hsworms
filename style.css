@@ -163,7 +163,7 @@ nav a:active {
 
 .text-section1 {
     background-image: url("./New_Fotos/header.jpg.png");
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
