@@ -1,56 +1,56 @@
 // ==========================================================================
-// 1. KOMPLETTE QUIZ-DATENBANK (Nur GESCHICHTE - Genau 10 Fragen)
+// 1. KOMPLETTE QUIZ-DATENBANK (Genau 10 Fragen für Teams)
 // ==========================================================================
 const fragen = [
     {
-        frage: "In welchem Jahr fand die erste Fußball-Weltmeisterschaft statt?",
-        antworten: ["1920", "1930", "1950", "1966"],
-        richtig: 1 // 1930
+        frage: "Wie viele Teams nehmen ab der WM 2026 insgesamt an der Endrunde teil?",
+        antworten: ["32 Teams", "40 Teams", "48 Teams", "64 Teams"],
+        richtig: 2
     },
     {
-        frage: "In welchem Land wurde die erste Fußball-WM ausgetragen?",
-        antworten: ["Brasilien", "Uruguay", "Deutschland", "Italien"],
-        richtig: 1 // Uruguay
+        frage: "In wie viele Gruppen werden die Teams in der Vorrunde der WM 2026 aufgeteilt?",
+        antworten: ["8 Gruppen", "12 Gruppen", "16 Gruppen", "10 Gruppen"],
+        richtig: 1
     },
     {
-        frage: "Welche Nation hat bis heute die meisten WM-Titel im Männerfußball gewonnen?",
+        frage: "Wie viele Mannschaften qualifizieren sich aus jeder Gruppe für die K.-o.-Runde?",
+        antworten: ["Nur der Gruppensieger", "Die besten 2 Teams", "Die besten 2 Teams + die 8 besten Gruppendritten", "Die besten 3 Teams"],
+        richtig: 2
+    },
+    {
+        frage: "Welche neue K.-o.-Runde wird es aufgrund der 48 Teams ab 2026 zum ersten Mal geben?",
+        antworten: ["Achtelfinale", "Sechzehntelfinale", "Zwischenrunde", "Viertelfinale"],
+        richtig: 1
+    },
+    {
+        frage: "Wie viele Spiele bestreitet der neue Weltmeister im gesamten Turnierverlauf?",
+        antworten: ["7 Spiele", "8 Spiele", "6 Spiele", "9 Spiele"],
+        richtig: 1
+    },
+    {
+        frage: "Wie viele Spiele werden bei der WM 2026 insgesamt ausgetragen?",
+        antworten: ["64 Spiele", "80 Spiele", "104 Spiele", "112 Spiele"],
+        richtig: 2
+    },
+    {
+        frage: "Wie viele Mannschaften spielen pro Gruppe in der Vorrunde?",
+        antworten: ["3 Teams", "4 Teams", "5 Teams", "6 Teams"],
+        richtig: 1
+    },
+    {
+        frage: "Welche Nation ist die einzige, die an absolut JEDER WM-Endrunde teilgenommen hat?",
         antworten: ["Deutschland", "Italien", "Argentinien", "Brasilien"],
-        richtig: 3 // Brasilien (5 Titel)
+        richtig: 3
     },
     {
-        frage: "Wer ist mit 16 Toren der ewige Top-Torschütze der WM-Geschichte?",
-        antworten: ["Ronaldo (Brasilien)", "Miroslav Klose", "Gerd Müller", "Lionel Messi"],
-        richtig: 1 // Miroslav Klose
+        frage: "Sind die drei Gastgeberländer automatisch für das Turnier qualifiziert?",
+        antworten: ["Ja, alle drei", "Nein, keines", "Nur die USA", "Nur Mexiko und die USA"],
+        richtig: 0
     },
     {
-        frage: "Wo fand die legendäre Fußball-WM im Jahr 2006 statt?",
-        antworten: ["Deutschland", "Frankreich", "Italien", "Südafrika"],
-        richtig: 0 // Deutschland
-    },
-    {
-        frage: "Welcher Spieler erzielte das berühmte 'Hand Gottes'-Tor bei der WM 1986?",
-        antworten: ["Pelé", "Diego Maradona", "Zinedine Zidane", "Luis Suárez"],
-        richtig: 1 // Diego Maradona
-    },
-    {
-        frage: "Wie viele offizielle WM-Titel hat die deutsche Nationalmannschaft bisher gewonnen?",
-        antworten: ["3 Titel", "4 Titel", "5 Titel", "2 Titel"],
-        richtig: 1 // 4 Titel
-    },
-    {
-        frage: "Welcher legendäre Spieler gewann als Einziger dreimal die WM als Spieler?",
-        antworten: ["Pelé", "Franz Beckenbauer", "Diego Maradona", "Ronaldo"],
-        richtig: 0 // Pelé
-    },
-    {
-        frage: "Welches Land wurde 2010 in Südafrika zum ersten Mal Weltmeister?",
-        antworten: ["Niederlande", "Spanien", "Portugal", "Argentinien"],
-        richtig: 1 // Spanien
-    },
-    {
-        frage: "Welche Nation ist die einzige, die an absolut jeder WM-Endrunde teilgenommen hat?",
-        antworten: ["Deutschland", "Italien", "Brasilien", "Frankreich"],
-        richtig: 2 // Brasilien
+        frage: "Welches Team gilt als der kleinste Debütant in der Geschichte der WM 2026?",
+        antworten: ["Island", "Curaçao", "Jamaika", "Neuseeland"],
+        richtig: 1
     }
 ];
 
