@@ -3,6 +3,26 @@
     box-sizing: border-box;
     margin: 0;
 }
+.Grid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+#header{
+    order: 1;
+}
+#aside-foto{
+    order: 2;
+}
+#cool{
+    order: 3;
+}
+#section2{
+    order: 4;
+}
+#block-end{
+    order: 5;
+}
+
 
 /* ==========================================================================
    NEUER HEADER & BANNER CODE (FÜR DIE FIXIERUNG & AUSRICHTUNG)
@@ -181,6 +201,7 @@ nav a:active {
     text-transform: uppercase;
     font-family: "Bebas Neue", sans-serif;
     font-size: 12px;
+    padding: 10px;
 }
 
 .text-section1 h1 {
@@ -191,6 +212,7 @@ nav a:active {
 .text-section1 p {
     color: white;
     font-size: 16px;
+    padding: 10px;
 }
 
 .jahr {
@@ -237,6 +259,7 @@ nav a:active {
     align-items: center;
     justify-content: space-around;
     width: 70%;
+    padding: 10px;
 }
 
 .titel-strich i {
@@ -299,7 +322,7 @@ nav a:active {
     grid-template-columns: repeat(1, 1fr);
     row-gap: 5px;
     font-family: "Bebas Neue", sans-serif;
-    font-size: 8px;
+    font-size: 13px;
 
 }
 
@@ -1349,12 +1372,12 @@ footer {
     }
 
     /* Spielkarten */
-    .spielplan-table tbody {
+    /* .spielplan-table tbody {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
         gap: 12px;
         margin-bottom: 20px;
-    }
+    } */
 
     .spiel-card {
         font-size: 15px;
@@ -1593,25 +1616,13 @@ footer {
 
     }
 
-    .spielplan-table tbody {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-        gap: 12px;
-    }
-
-    .spiel-card {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        font-size: 15px;
-    }
 }
 
 
 @media (min-width: 768px) {
-    .antworten {
+    /* .antworten {
         grid-template-columns: repeat(2, 1fr);
-    }
+    } */
 
     .pruefen-btn {
         width: 300px;
@@ -1622,9 +1633,12 @@ footer {
 
 /* Responsiv zwischen 768 und 1023 */
 @media (min-width: 768px) and (max-width: 1023px) {
-    .spielplan-table tbody {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+    .text-section1{
+        padding: 10px;
+    }
+    .spiel-card p,
+    .spiel-card span {
+        font-size: 15px;
     }
 
     * {
@@ -1679,8 +1693,10 @@ footer {
         width: 100px;
     }
 
-    .section2 div {
-        font-size: 20px;
+    .section2-blöcke1 {
+        p,h2,a{
+            font-size: 15px;
+        }
     }
 
     #teams {
