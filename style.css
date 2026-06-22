@@ -24,6 +24,7 @@
 }
 
 
+
 /* ==========================================================================
    NEUER HEADER & BANNER CODE (FÜR DIE FIXIERUNG & AUSRICHTUNG)
    ========================================================================== */
@@ -111,7 +112,7 @@ body {
 }
 
 .burger {
-    display: block;
+    display: flex;
     margin-left: auto;
     background-color: rgb(2, 6, 23);
     color: gold;
@@ -1371,13 +1372,6 @@ footer {
         min-height: 48px;
     }
 
-    /* Spielkarten */
-    /* .spielplan-table tbody {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-        gap: 12px;
-        margin-bottom: 20px;
-    } */
 
     .spiel-card {
         font-size: 15px;
