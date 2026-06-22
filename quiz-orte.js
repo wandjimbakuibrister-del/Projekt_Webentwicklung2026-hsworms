@@ -1,73 +1,56 @@
 // ==========================================================================
-// BURGER MENU LOGIC
-// ==========================================================================
-const burgerBtn = document.getElementById("burgerBtn");
-const navMenu = document.getElementById("navMenu");
-
-if (burgerBtn && navMenu) {
-    burgerBtn.addEventListener("click", function () {
-        navMenu.classList.toggle("active");
-        if (navMenu.classList.contains("active")) {
-            burgerBtn.textContent = "×";
-        } else {
-            burgerBtn.textContent = "☰";
-        }
-    });
-}
-
-// ==========================================================================
-// 1. KOMPLETTE QUIZ-DATENBANK (Nur GESCHICHTE - Genau 10 Fragen)
+// 1. KOMPLETTE QUIZ-DATENBANK (Genau 10 Fragen für Spielorte)
 // ==========================================================================
 const fragen = [
     {
-        frage: "In welchem Jahr fand die erste Fußball-Weltmeisterschaft statt?",
-        antworten: ["1920", "1930", "1950", "1966"],
-        richtig: 1 // 1930
+        frage: "Wie viele Nationen sind 2026 gemeinsam Gastgeber der FIFA Weltmeisterschaft?",
+        antworten: ["1 Nation", "2 Nationen", "3 Nationen", "4 Nationen"],
+        richtig: 2
     },
     {
-        frage: "In welchem Land wurde die erste Fußball-WM ausgetragen?",
-        antworten: ["Brasilien", "Uruguay", "Deutschland", "Italien"],
-        richtig: 1 // Uruguay
+        frage: "In welchem Stadion wird das große Finale der WM 2026 ausgetragen?",
+        antworten: ["MetLife Stadium (New York/New Jersey)", "Aztekenstadion (Mexiko-Stadt)", "SoFi Stadium (Los Angeles)", "AT&T Stadium (Dallas)"],
+        richtig: 0
     },
     {
-        frage: "Welche Nation hat bis heute die meisten WM-Titel im Männerfußball gewonnen?",
-        antworten: ["Deutschland", "Italien", "Argentinien", "Brasilien"],
-        richtig: 3 // Brasilien (5 Titel)
+        frage: "Welches historische Stadion wird 2026 das Eröffnungsspiel ausrichten?",
+        antworten: ["BC Place (Vancouver)", "Aztekenstadion (Mexiko-Stadt)", "Hard Rock Stadium (Miami)", "NRG Stadium (Houston)"],
+        richtig: 1
     },
     {
-        frage: "Wer ist mit 16 Toren der ewige Top-Torschütze der WM-Geschichte?",
-        antworten: ["Ronaldo (Brasilien)", "Miroslav Klose", "Gerd Müller", "Lionel Messi"],
-        richtig: 1 // Miroslav Klose
+        frage: "Wie viele kanadische Städte sind offizielle Spielorte der WM 2026?",
+        antworten: ["2 Städte", "3 Städte", "4 Städte", "5 Städte"],
+        richtig: 0
     },
     {
-        frage: "Wo fand die legendäre Fußball-WM im Jahr 2006 statt?",
-        antworten: ["Deutschland", "Frankreich", "Italien", "Südafrika"],
-        richtig: 0 // Deutschland
+        frage: "Welches Land stellt mit insgesamt 11 Austragungsorten die meisten Stadien?",
+        antworten: ["Mexiko", "Kanada", "USA", "Alle gleich viele"],
+        richtig: 2
     },
     {
-        frage: "Welcher Spieler erzielte das berühmte 'Hand Gottes'-Tor bei der WM 1986?",
-        antworten: ["Pelé", "Diego Maradona", "Zinedine Zidane", "Luis Suárez"],
-        richtig: 1 // Diego Maradona
+        frage: "Wie viele offizielle Austragungsstädte (Host Cities) gibt es insgesamt bei der WM 2026?",
+        antworten: ["12 Städte", "16 Städte", "20 Städte", "24 Städte"],
+        richtig: 1
     },
     {
-        frage: "Wie viele offizielle WM-Titel hat die deutsche Nationalmannschaft bisher gewonnen?",
-        antworten: ["3 Titel", "4 Titel", "5 Titel", "2 Titel"],
-        richtig: 1 // 4 Titel
+        frage: "Welches Stadion hat die größte Kapazität bei der WM 2026 (über 87.000 Plätze)?",
+        antworten: ["Aztekenstadion (Mexiko-Stadt)", "MetLife Stadium (New York)", "BMO Field (Toronto)", "Lumen Field (Seattle)"],
+        richtig: 0
     },
     {
-        frage: "Welcher legendäre Spieler gewann als Einziger dreimal die WM als Spieler?",
-        antworten: ["Pelé", "Franz Beckenbauer", "Diego Maradona", "Ronaldo"],
-        richtig: 0 // Pelé
+        frage: "In welcher US-Stadt steht das Hard Rock Stadium, ein Austragungsort der WM 2026?",
+        antworten: ["Miami", "Atlanta", "Boston", "Houston"],
+        richtig: 0
     },
     {
-        frage: "Welches Land wurde 2010 in Südafrika zum ersten Mal Weltmeister?",
-        antworten: ["Niederlande", "Spanien", "Portugal", "Argentinien"],
-        richtig: 1 // Spanien
+        frage: "Welches Land wird 2026 zum DRITTEN Mal in seiner Geschichte Spiele einer Männer-WM ausrichten?",
+        antworten: ["USA", "Kanada", "Mexiko", "Keines"],
+        richtig: 2
     },
     {
-        frage: "Welche Nation ist die einzige, die an absolut jeder WM-Endrunde teilgenommen hat?",
-        antworten: ["Deutschland", "Italien", "Brasilien", "Frankreich"],
-        richtig: 2 // Brasilien
+        frage: "Welche kanadische Stadt nutzt das Stadion 'BMO Field' für die WM-Spiele?",
+        antworten: ["Vancouver", "Montreal", "Toronto", "Ottawa"],
+        richtig: 2
     }
 ];
 
@@ -112,20 +95,18 @@ function zeigeFrage() {
 }
 
 // Klick-Events für Antwort-Buttons
-if (buttons) {
-    buttons.forEach((button, index) => {
-        button.addEventListener("click", () => {
-            buttons.forEach(btn => {
-                btn.style.borderColor = "rgba(255, 215, 0, 0.25)";
-                btn.style.backgroundColor = "transparent";
-            });
-
-            button.style.borderColor = "gold";
-            button.style.backgroundColor = "rgba(255, 215, 0, 0.1)";
-            gewaehlteAntwortIndex = index;
+buttons.forEach((button, index) => {
+    button.addEventListener("click", () => {
+        buttons.forEach(btn => {
+            btn.style.borderColor = "rgba(255, 215, 0, 0.25)";
+            btn.style.backgroundColor = "transparent";
         });
+
+        button.style.borderColor = "gold";
+        button.style.backgroundColor = "rgba(255, 215, 0, 0.1)";
+        gewaehlteAntwortIndex = index;
     });
-}
+});
 
 // Klick-Event für den Prüfen / Weiter Button
 if (pruefenBtn) {
@@ -178,39 +159,5 @@ if (pruefenBtn) {
 }
 
 // Initialisierung beim Laden
-if (buttons && frageText) {
-    buttons.forEach(btn => btn.style.display = "flex"); 
-    zeigeFrage();
-}
-const burgerBtn = document.getElementById("burgerBtn");
-const navMenu = document.getElementById("navMenu");
-
-burgerBtn.addEventListener("click", function () {
-    navMenu.classList.toggle("active");
-
-
-    if (navMenu.classList.contains("active")) {
-        burgerBtn.textContent = "×";
-    } else {
-        burgerBtn.textContent = "☰";
-    }
-
-});
-
-
-// quiz geschichte
-const richtigeAntworten = [
-"Uruguay",
-"Brasilien",
-"1954",
-"Miroslav Klose",
-"Frankreich",
-"Deutschland",
-"Spanien",
-"Argentinien",
-"Kroatien",
-"England"
-];
-
-
-
+buttons.forEach(btn => btn.style.display = "flex"); 
+zeigeFrage();
