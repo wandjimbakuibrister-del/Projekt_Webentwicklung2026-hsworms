@@ -20,56 +20,40 @@
 </head>
 
 <body class="index-seite" id="quiz-index">
-    <div class="Grid-container">
-        <header>
-            <div class="header-container" id="logo-links">
-                <img src="./New_Fotos/pokal-logo.png" alt="World cup 2026 logo">
-                <h1 class="header-title">
-                    FUSSBALL<br>
-                    WELTMEISTERSCHAFT
-                    <strong class="jahr">2026</strong>
-                </h1>
+    <header>
+        <div class="header-container" id="logo-links">
+            <img src="./New_Fotos/pokal-logo.png" alt="World cup 2026 logo">
+            <h1 class="header-title">
+                FUSSBALL<br>
+                WELTMEISTERSCHAFT
+                <strong class="jahr">2026</strong>
+            </h1>
+        </div>
+
+        <button class="burger" id="burgerBtn" type="button">
+            ☰
+        </button>
+
+        <nav id="navMenu">
+            <ul>
+                <li><a href="./index.html">STARTSEITE</a></li>
+                <li><a href="./spielplan.html">SPIELPLAN</a></li>
+                <li><a href="./gruppen.html">GRUPPEN</a></li>
+                <li><a href="./quiz.html">QUIZ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="spielplan-header" id="Anf-Stop">
+            <img alt="kalender logo" src="./logo/kalender.jpg.png">
+
+            <div class="header-content">
+                <h1>QUIZ</h1>
+                <p>Teste dein Wissen rund um die Fussball-Weltmeisterschaft</p>
             </div>
+        </section>
 
-<<<<<<< HEAD
-            <button class="burger" id="burgerBtn" type="button">
-                ☰
-            </button>
-
-            <nav id="navMenu">
-                <ul>
-                    <li><a href="./index.html">STARTSEITE</a></li>
-                    <li><a href="./spielplan.html">SPIELPLAN</a></li>
-                    <li><a href="./gruppen.html">GRUPPEN</a></li>
-                    <li><a href="./quiz.html">QUIZ</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <main>
-            <section class="spielplan-header" id="Anf-Stop">
-                <img alt="kalender logo" src="./logo/kalender.jpg.png">
-
-                <div class="header-content">
-                    <h1>QUIZ</h1>
-                    <p>Teste dein Wissen rund um die Fussball-Weltmeisterschaft</p>
-                </div>
-            </section>
-
-            <section class="quiz-box">
-                <div class="quiz-top">
-                    <div class="frage-status">
-                        <span>Frage 1 von 10</span>
-                        <div class="progress-bar">
-                            <div class="progress"></div>
-                        </div>
-                    </div>
-
-                    <div class="punkte-box">
-                        <span>Punkte:</span>
-                        <strong>0</strong>
-                        <span class="star">★</span>
-=======
 
         <section class="quiz-box">
             <div class="quiz-top">
@@ -77,109 +61,74 @@
                     <span>Frage 1 von 10</span>
                     <div class="progress-bar">
                         <div class="progress"></div>
->>>>>>> 8211fc52401c1a242c0a194c414a7e6711e1c9dc
                     </div>
                 </div>
 
-                <hr>
-
-                <h2 class="quiz-frage">
-                    Wie viele Nationen sind Gastgeber der WM 2026?
-                </h2>
-
-                <div class="antworten">
-                    <button class="antwort-btn" type="button">
-                        <span class="buchstabe">A</span>
-                        <span>1</span>
-                    </button>
-
-                    <button class="antwort-btn" type="button">
-                        <span class="buchstabe">B</span>
-                        <span>2</span>
-                    </button>
-
-                    <button class="antwort-btn" type="button">
-                        <span class="buchstabe">C</span>
-                        <span>3</span>
-                    </button>
-
-                    <button class="antwort-btn" type="button">
-                        <span class="buchstabe">D</span>
-                        <span>4</span>
-                    </button>
+                <div class="punkte-box">
+                    <span>Punkte:</span>
+                    <strong>0</strong>
+                    <span class="star">★</span>
                 </div>
+            </div>
 
-                <button class="pruefen-btn" type="button">
-                    Antwort prüfen
+            <hr>
+
+            <h2 class="quiz-frage">
+                Wie viele Nationen sind Gastgeber der WM 2026?
+            </h2>
+
+            <div class="antworten">
+                <button class="antwort-btn" type="button">
+                    <span class="buchstabe">A</span>
+                    <span>1</span>
                 </button>
-            </section>
 
-            <section class="section2" id="section2">
-                <div class="section2-blöcke" id="spie-grupp-quiz">
-                    <div class="section2-blöcke1" id="karte1">
-                        <img src="./logo/spielplan.png" alt="Spielplan logo">
-                        <h2>WM GESCHICHTE</h2>
-                        <p>Fragen zur Historie der<br>Weltmeisterschaft</p>
-                        <a href="./indexGeschichte.html">Quiz starten →</a>
-                    </div>
+                <button class="antwort-btn" type="button">
+                    <span class="buchstabe">B</span>
+                    <span>2</span>
+                </button>
 
-                    <div class="section2-blöcke1" id="karte2">
-                        <img src="./logo/gruppen.png" alt="Gruppen logo">
-                        <h2>TEAMS &amp; GRUPPEN</h2>
-                        <p>Teste dein Wissen über Teams,<br> Gruppen und Qualifikationen</p>
-                        <a href="./indexteam.html">Quiz starten →</a>
-                    </div>
+                <button class="antwort-btn" type="button">
+                    <span class="buchstabe">C</span>
+                    <span>3</span>
+                </button>
 
-                    <div class="section2-blöcke1" id="karte3">
-                        <img src="./logo/quiz.png" alt="Quiz logo">
-                        <h2>SPIELORTE</h2>
-                        <p>Fragen zu Stadien, Städten<br>und Spielorten</p>
-                        <a href="./indexorte.html">Quiz starten →</a>
-                    </div>
-                </div>
-            </section>
+                <button class="antwort-btn" type="button">
+                    <span class="buchstabe">D</span>
+                    <span>4</span>
+                </button>
+            </div>
 
-            <div class="quiz-unter">
-                <div class="erster-block">
-                    <div class="Foto-text">
-                        <img src="./New_Fotos/spielplan.jpg.png" alt="Spielplan logo">
-                    </div>
-                    <div class="text-quiz">
-                        <h2 class="quiz-titel">5 Fragen</h2>
-                        <p>Jedes Quiz besteht aus <br> 5 spannenden Fragen</p>
-                    </div>
+            <button class="pruefen-btn" type="button">
+                Antwort prüfen
+            </button>
+        </section>
+
+        <section class="section2" id="section2">
+            <div class="section2-blöcke" id="spie-grupp-quiz">
+                <div class="section2-blöcke1" id="karte1">
+                    <img src="./logo/spielplan.png" alt="Spielplan logo">
+                    <h2>WM GESCHICHTE</h2>
+                    <p>Fragen zur Historie der<br>Weltmeisterschaft</p>
+                    <a href="./indexGeschichte.html">Quiz starten →</a>
                 </div>
 
-                <div class="erster-block">
-                    <div class="Foto-text">
-                        <img src="./New_Fotos/spielplan.jpg.png" alt="Spielplan logo">
-                    </div>
-                    <div class="text-quiz">
-                        <h2 class="quiz-titel">Punkte sammeln</h2>
-                        <p>Sammle Punkte und verbessere <br> dein Wissen</p>
-                    </div>
+                <div class="section2-blöcke1" id="karte2">
+                    <img src="./logo/gruppen.png" alt="Gruppen logo">
+                    <h2>TEAMS &amp; GRUPPEN</h2>
+                    <p>Teste dein Wissen über Teams,<br> Gruppen und Qualifikationen</p>
+                    <a href="./indexteam.html">Quiz starten →</a>
                 </div>
 
-                <div class="erster-block">
-                    <div class="Foto-text">
-                        <img src="./New_Fotos/spielplan.jpg.png" alt="Spielplan logo">
-                    </div>
-                    <div class="text-quiz">
-                        <h2 class="quiz-titel">Sofortige Auswertung</h2>
-                        <p>Erhalte direkt dein Ergebnis und <br> die richtigen Antworten</p>
-                    </div>
+                <div class="section2-blöcke1" id="karte3">
+                    <img src="./logo/quiz.png" alt="Quiz logo">
+                    <h2>SPIELORTE</h2>
+                    <p>Fragen zu Stadien, Städten<br>und Spielorten</p>
+                    <a href="./indexorte.html">Quiz starten →</a>
                 </div>
+            </div>
+        </section>
 
-<<<<<<< HEAD
-                <div class="erster-block">
-                    <div class="Foto-text">
-                        <img src="./New_Fotos/spielplan.jpg.png" alt="Spielplan logo">
-                    </div>
-                    <div class="text-quiz">
-                        <h2 class="quiz-titel">4 Kategorien</h2>
-                        <p>Verschiedene Themenbereiche <br> rund um WM 2026</p>
-                    </div>
-=======
         <div class="quiz-unter">
             <div class="erster-block">
                 <div class="Foto-text">
@@ -188,19 +137,18 @@
                 <div class="text-quiz">
                     <h2 class="quiz-titel">10 Fragen</h2>
                     <p>Jedes Quiz besteht aus <br> 10 spannenden Fragen</p>
->>>>>>> 8211fc52401c1a242c0a194c414a7e6711e1c9dc
                 </div>
             </div>
 
-            <div class="ticker-container">
-                <div id="ticker" class="ticker">
-                    <div class="score-box">Lade Live-Scores...</div>
+            <div class="erster-block">
+                <div class="Foto-text">
+                    <img src="./New_Fotos/spielplan.jpg.png" alt="Spielplan logo">
+                </div>
+                <div class="text-quiz">
+                    <h2 class="quiz-titel">Punkte sammeln</h2>
+                    <p>Sammle Punkte und verbessere <br> dein Wissen</p>
                 </div>
             </div>
-<<<<<<< HEAD
-        </main>
-    </div>
-=======
 
             <div class="erster-block">
                 <div class="Foto-text">
@@ -229,7 +177,6 @@
             </div>
         </div>
     </main>
->>>>>>> 8211fc52401c1a242c0a194c414a7e6711e1c9dc
 
     <footer>
         <div class="footer-logos">
