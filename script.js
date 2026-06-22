@@ -103,11 +103,21 @@ function countdownAktualisieren() {
         countdownTitel.textContent = titelText;
     }
 
+    // --- SÉCURITÉ : On vérifie si les éléments du compteur existent avant de modifier leur texte ---
+    const tageEl = document.getElementById("tage");
+    const stundenEl = document.getElementById("stunden");
+    const minutenEl = document.getElementById("minuten");
+    const sekundenEl = document.getElementById("sekunden");
+
+    if (!tageEl || !stundenEl || !minutenEl || !sekundenEl) {
+        return; // Si l'un d'eux manque sur la page (ex: sur les pages de Quiz), on arrête l'exécution ici sans planter.
+    }
+
     if (zielDatum === null) {
-        document.getElementById("tage").textContent = "00";
-        document.getElementById("stunden").textContent = "00";
-        document.getElementById("minuten").textContent = "00";
-        document.getElementById("sekunden").textContent = "00";
+        tageEl.textContent = "00";
+        stundenEl.textContent = "00";
+        minutenEl.textContent = "00";
+        sekundenEl.textContent = "00";
         return;
     }
 
@@ -118,12 +128,11 @@ function countdownAktualisieren() {
     const minuten = Math.floor((abstand % (1000 * 60 * 60)) / (1000 * 60));
     const sekunden = Math.floor((abstand % (1000 * 60)) / 1000);
 
-    document.getElementById("tage").textContent = tage;
-    document.getElementById("stunden").textContent = stunden;
-    document.getElementById("minuten").textContent = minuten;
-    document.getElementById("sekunden").textContent = sekunden;
+    tageEl.textContent = tage;
+    stundenEl.textContent = stunden;
+    minutenEl.textContent = minuten;
+    sekundenEl.textContent = sekunden;
 }
-
 setInterval(countdownAktualisieren, 1000);//aktualisiert den Countdown jede Sekunde
 
 countdownAktualisieren();
