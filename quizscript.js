@@ -1,4 +1,21 @@
 // ==========================================================================
+// BURGER MENU LOGIC
+// ==========================================================================
+const burgerBtn = document.getElementById("burgerBtn");
+const navMenu = document.getElementById("navMenu");
+
+if (burgerBtn && navMenu) {
+    burgerBtn.addEventListener("click", function () {
+        navMenu.classList.toggle("active");
+        if (navMenu.classList.contains("active")) {
+            burgerBtn.textContent = "×";
+        } else {
+            burgerBtn.textContent = "☰";
+        }
+    });
+}
+
+// ==========================================================================
 // 1. KOMPLETTE QUIZ-DATENBANK (Nur GESCHICHTE - Genau 10 Fragen)
 // ==========================================================================
 const fragen = [
@@ -95,18 +112,20 @@ function zeigeFrage() {
 }
 
 // Klick-Events für Antwort-Buttons
-buttons.forEach((button, index) => {
-    button.addEventListener("click", () => {
-        buttons.forEach(btn => {
-            btn.style.borderColor = "rgba(255, 215, 0, 0.25)";
-            btn.style.backgroundColor = "transparent";
-        });
+if (buttons) {
+    buttons.forEach((button, index) => {
+        button.addEventListener("click", () => {
+            buttons.forEach(btn => {
+                btn.style.borderColor = "rgba(255, 215, 0, 0.25)";
+                btn.style.backgroundColor = "transparent";
+            });
 
-        button.style.borderColor = "gold";
-        button.style.backgroundColor = "rgba(255, 215, 0, 0.1)";
-        gewaehlteAntwortIndex = index;
+            button.style.borderColor = "gold";
+            button.style.backgroundColor = "rgba(255, 215, 0, 0.1)";
+            gewaehlteAntwortIndex = index;
+        });
     });
-});
+}
 
 // Klick-Event für den Prüfen / Weiter Button
 if (pruefenBtn) {
@@ -159,5 +178,7 @@ if (pruefenBtn) {
 }
 
 // Initialisierung beim Laden
-buttons.forEach(btn => btn.style.display = "flex"); 
-zeigeFrage();
+if (buttons && frageText) {
+    buttons.forEach(btn => btn.style.display = "flex"); 
+    zeigeFrage();
+}
