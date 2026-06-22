@@ -1592,16 +1592,38 @@ footer {
         }
 
     }
-}
 
-@media (min-width: 801px) {
-     .spielplan-table tbody {
+    .spielplan-table tbody {
         display: grid;
-        grid-template-columns:1fr 1fr;
-        }
-    
-   
+        grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+        gap: 12px;
+    }
+
+    .spiel-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 15px;
+    }
 }
+/* 
+@media (min-width: 801px) {
+    .spielplan-table tbody {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+        gap: 12px;
+    }
+
+    .spiel-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 15px;
+    }
+
+
+} */
+
 @media (min-width: 768px) {
     .antworten {
         grid-template-columns: repeat(2, 1fr);
@@ -1613,27 +1635,32 @@ footer {
         margin: 22px auto 0;
     }
 }
+
 /* Responsiv zwischen 768 und 1023 */
 @media (min-width: 768px) and (max-width: 1023px) {
-        .spielplan-table tbody {
+    .spielplan-table tbody {
         display: grid;
-        grid-template-columns:1fr 1fr;
-        }
-    
-    *{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    * {
         font-size: 25px;
     }
-     header .header-title{
+
+    header .header-title {
         font-size: 15px;
     }
+
     .countdown-section h1,
-    .countdown-section span{
+    .countdown-section span {
         font-size: 20px;
 
     }
-    .titel-strich i{
+
+    .titel-strich i {
         font-size: 18px;
     }
+
     .section2-blöcke {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1646,35 +1673,43 @@ footer {
     .section3 {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .section3 div {
         font-size: 18px;
-        h3{
+
+        h3 {
             color: gold;
         }
-        p{ 
+
+        p {
             font-size: 18px;
         }
     }
+
     #stadien .zahl-index,
-    #stadien .zahl-index +p{
+    #stadien .zahl-index+p {
         font-size: 18px;
     }
-    .section3 img{
+
+    .section3 img {
         width: 100px;
     }
-    .section2 div{
+
+    .section2 div {
         font-size: 20px;
     }
-    #teams{
+
+    #teams {
         border-right: none;
     }
 
     aside {
         width: 100%;
-        h3{
+
+        h3 {
             font-size: 35px;
         }
-        
+
     }
 
     .aside-blöcke {
