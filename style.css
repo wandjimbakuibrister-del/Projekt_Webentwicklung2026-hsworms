@@ -1226,6 +1226,12 @@ input,
 .navigation-impressum .text-foo {
     order: 2;
 }
+
+
+
+/* für PC Startseite */
+/* @media(min-width: 768px) */
+
 /* Für PC */
 @media (min-width: 1024px) {
 
