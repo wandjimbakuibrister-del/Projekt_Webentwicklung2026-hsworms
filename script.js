@@ -5,7 +5,7 @@
 function toggleSpiele(buttonId, spieleKlasse) {
     const button = document.getElementById(buttonId);
     const extraSpiele = document.querySelectorAll(spieleKlasse);
-
+    const a = document.getElementById("top");
     let sichtbar = false;
     const is_computer = window.innerWidth >= 561;
     let sichtbar_mehranzeigen = 0;
@@ -25,6 +25,7 @@ function toggleSpiele(buttonId, spieleKlasse) {
             if (sichtbar === false) {
                 extraSpiele.forEach(function (spiel) {
                     spiel.style.display = "block";
+
                 });
 
                 button.textContent = "Weniger zeigen";
@@ -62,14 +63,14 @@ const burgerBtn = document.getElementById("burgerBtn");
 const navMenu = document.getElementById("navMenu");
 
 burgerBtn.addEventListener("click", function () {
-navMenu.classList.toggle("active");
+    navMenu.classList.toggle("active");
 
 
-if (navMenu.classList.contains("active")) {
-    burgerBtn.textContent = "×";
-} else {
-    burgerBtn.textContent = "☰";
-}
+    if (navMenu.classList.contains("active")) {
+        burgerBtn.textContent = "×";
+    } else {
+        burgerBtn.textContent = "☰";
+    }
 
 });
 
@@ -138,4 +139,27 @@ setInterval(countdownAktualisieren, 1000);//aktualisiert den Countdown jede Seku
 countdownAktualisieren();
 
 
-// Quiz
+// API
+emailjs.init("wq2UMhUCF5VUsykJ3");
+
+const emailForm = document.getElementById("emailForm");
+const userEmail = document.getElementById("userEmail");
+const emailInfo = document.getElementById("emailInfo");
+
+emailForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    emailjs.send("service_e5f0u1o", "template_m3fv85u", {
+        user_email: userEmail.value
+    })
+    .then(function () {
+        emailInfo.textContent = "E-Mail wurde erfolgreich gesendet ✅";
+        emailInfo.style.color = "green";
+        emailForm.reset();
+    })
+    .catch(function (error) {
+        emailInfo.textContent = "Fehler beim Senden der E-Mail ❌";
+        emailInfo.style.color = "red";
+        console.log(error);
+    });
+});

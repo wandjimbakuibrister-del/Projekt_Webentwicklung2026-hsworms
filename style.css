@@ -3,25 +3,18 @@
     box-sizing: border-box;
     margin: 0;
 }
-.Grid-container{
+
+.Grid-container {
     display: grid;
     grid-template-columns: 1fr;
 }
-#header{
-    order: 1;
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
 }
-#aside-foto{
-    order: 2;
-}
-#cool{
-    order: 3;
-}
-#section2{
-    order: 4;
-}
-#block-end{
-    order: 5;
-}
+
 
 
 
@@ -1196,10 +1189,43 @@ footer {
     /* Optionale Farbänderung beim Hovern */
 }
 
+/* API */
+.email {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(255, 215, 0, 0.25);
+    padding: 5px;
+    color: gold;
+    border-radius: 5px;
+    font-size: 0.6rem;
+    height: 100%;
+}
 
-/* für PC Startseite */
-/* @media(min-width: 768px) */
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
 
+}
+
+input,
+.email button {
+    border-radius: 5px;
+    padding: 2px;
+
+}
+
+.navigation-impressum ul {
+    order: 1;
+}
+
+#senden-email {
+    order: 3;
+}
+
+.navigation-impressum .text-foo {
+    order: 2;
+}
 /* Für PC */
 @media (min-width: 1024px) {
 
@@ -1607,11 +1633,8 @@ footer {
         p {
             font-size: 20px;
         }
-
     }
-
 }
-
 
 @media (min-width: 768px) {
     /* .antworten {
@@ -1627,9 +1650,10 @@ footer {
 
 /* Responsiv zwischen 768 und 1023 */
 @media (min-width: 768px) and (max-width: 1023px) {
-    .text-section1{
+    .text-section1 {
         padding: 10px;
     }
+
     .spiel-card p,
     .spiel-card span {
         font-size: 15px;
@@ -1688,7 +1712,10 @@ footer {
     }
 
     .section2-blöcke1 {
-        p,h2,a{
+
+        p,
+        h2,
+        a {
             font-size: 15px;
         }
     }
@@ -1731,89 +1758,56 @@ footer {
     nav a {
         font-size: 16px;
     }
-}
 
-/* API*/
-.ticker-container {
-    width: 100%;
-    overflow: hidden;
-    padding: 20px 0;
-    background: linear-gradient(90deg, #0f172a, #1e293b);
-}
-
-.ticker {
-    display: flex;
-    gap: 25px;
-    width: max-content;
-    animation: scroll 40s linear infinite;
-}
-
-.score-box {
-    min-width: 320px;
-    background: none;
-    border-radius: 18px;
-    padding: 20px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: transform 0.3s ease;
-}
-
-.score-box:hover {
-    transform: scale(1.05);
-}
-
-.teams {
-    font-size: 1.2rem;
-    font-weight: 700;
-    text-align: center;
-
-}
-
-.score {
-    font-size: 2.5rem;
-    font-weight: 900;
-    margin: 10px 0;
-}
-
-.minute {
-    padding: 6px 12px;
-    border-radius: 999px;
-    font-size: 0.9rem;
-    font-weight: bold;
-}
-
-@keyframes scroll {
-    from {
-        transform: translateX(100%);
+    /* API */
+    .email p {
+        font-size: 0.9rem;
     }
 
-    to {
-        transform: translateX(-100%);
+    form {
+        display: flex;
+        flex-direction: row;
+        margin: 5px;
     }
+
+    input,
+    .email button {
+        border-radius: 5px;
+        padding: 2px;
+    }
+
+    .navigation-impressum .text-foo {
+        order: 3;
+    }
+
+    .navigation-impressum a {
+        font-size: 0.8rem;
+    }
+
 }
+
+
 /* ========================================================================= */
-/* QUIZ INTERACTION - Farben und Zustände (Muss ganz ans Ende der Datei)     */
+/* QUIZ INTERACTION - Farben und Zustände*/
 /* ========================================================================= */
 
 /* Die ausgewählte Antwort (während der Auswahl blau hinterlegen) */
 .antwort-btn.selected {
-    background-color: #0d6efd !important; 
+    background-color: #0d6efd !important;
     color: white !important;
     border-color: #0d6efd !important;
 }
 
 /* Die richtige Antwort (nach dem Prüfen grün hinterlegen) */
 .antwort-btn.correct {
-    background-color: #198754 !important; 
+    background-color: #198754 !important;
     color: white !important;
     border-color: #198754 !important;
 }
 
 /* Die falsch ausgewählte Antwort (nach dem Prüfen rot hinterlegen) */
 .antwort-btn.wrong {
-    background-color: #dc3545 !important; 
+    background-color: #dc3545 !important;
     color: white !important;
     border-color: #dc3545 !important;
 }
