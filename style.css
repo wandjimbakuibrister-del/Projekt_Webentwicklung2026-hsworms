@@ -1640,6 +1640,9 @@ input,
             font-size: 20px;
         }
     }
+    .email p {
+        font-size: 1.1rem;
+    }
 }
 
 @media (min-width: 768px) {
@@ -1781,11 +1784,6 @@ input,
         border-radius: 5px;
         padding: 2px;
     }
-
-    .navigation-impressum .text-foo {
-        order: 3;
-    }
-
     .navigation-impressum a {
         font-size: 0.8rem;
     }
