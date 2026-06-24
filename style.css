@@ -41,6 +41,9 @@ header {
     z-index: 9999;
     /* Bleibt immer über den Tabellen und Texten */
 }
+.text-header{
+    padding: 10px;
+}
 
 /* Verhindert, dass der Inhalt durch den fixierten Header verdeckt wird */
 body {
