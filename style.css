@@ -24,6 +24,7 @@ main {
 
 header {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     min-height: 90px;
@@ -119,13 +120,13 @@ body {
 nav {
     display: none;
     position: absolute;
-    top: 95px;
+    top: 90px;
     right: 2px;
     background-color: rgb(2, 6, 23);
     border: 1px solid rgba(255, 215, 0, 0.25);
-    border-radius: 8px;
     padding: 15px;
-    min-width: 180px;
+    width: 100%;
+    height: auto;
 }
 
 /* Wenn active kommt, wird Menü sichtbar */
@@ -155,18 +156,13 @@ nav a {
     font-size: 10px;
 }
 
-button:hover {
-    transform: scale(1.01);
+nav li:hover {
+    transform: scale(1.5);
+    transition: transform 0.3s ease;
 }
-
-nav a:hover {
-    color: gold;
+nav a:hover{
+     color: gold;
 }
-
-nav a:active {
-    transform: scale(1.01);
-}
-
 .index-seite {
     background-color: rgb(2, 6, 23);
     color: white;
@@ -1227,16 +1223,22 @@ input,
     order: 2;
 }
 
-
-
-/* für PC Startseite */
-/* @media(min-width: 768px) */
+/* Anzeige von dem Element Mehr Ansehen in Kärtchen */
+.section2-blöcke a {
+    text-decoration: none;
+    color: gold;
+}
 
 /* Für PC */
 @media (min-width: 1024px) {
 
     /* header */
     /* Logo oben links*/
+    .text-quiz h2,
+    .text-quiz p {
+        font-size: 20px;
+    }
+
     .header-title {
         font-size: 25px;
     }
@@ -1329,28 +1331,35 @@ input,
     }
 
     nav {
-        display: block;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
         position: static;
         background-color: transparent;
         border: none;
         border-radius: 0;
         padding: 0;
-        min-width: auto;
+
     }
 
     nav ul {
         display: flex;
         flex-direction: row;
-        gap: 25px;
+        justify-content: flex-end;
+        gap: 95px;
         align-items: center;
+
     }
 
     nav li {
         margin-bottom: 0;
+        gap: 1px;
+
     }
 
     nav a {
         font-size: 18px;
+
     }
 
     #logo-links {
@@ -1503,20 +1512,6 @@ input,
         color: gold;
     }
 
-
-
-
-}
-
-/* Für navigationsleiste Startseite für PC */
-
-/* Anzeige von dem Element Mehr Ansehen in Kärtchen */
-.section2-blöcke a {
-    text-decoration: none;
-    color: gold;
-}
-
-@media (min-width: 1024px) {
     .section2-blöcke {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -1541,10 +1536,7 @@ input,
         padding: 10px;
         border: none;
     }
-}
 
-
-@media (min-width: 1024px) {
     .grossblock-finale {
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
@@ -1640,25 +1632,44 @@ input,
             font-size: 20px;
         }
     }
+
     .email p {
-        font-size: 1.1rem;
+        font-size: 1.rem;
+    }
+
+    /* Anzeige von dem Element Mehr Ansehen in Kärtchen */
+    .section2-blöcke a {
+        text-decoration: none;
+        color: gold;
     }
 }
 
-@media (min-width: 768px) {
-    /* .antworten {
-        grid-template-columns: repeat(2, 1fr);
-    } */
+/* Für navigationsleiste Startseite für PC */
+
+/* Responsiv zwischen 768 und 1023 */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .header-content h1,
+    .header-content p {
+        font-size: 30px;
+    }
+
+    #Anf-Stop img {
+        width: 70px;
+        height: auto;
+    }
+
+    .text-quiz h2,
+    .text-quiz p {
+        font-size: 14px;
+    }
 
     .pruefen-btn {
         width: 300px;
         display: block;
         margin: 22px auto 0;
     }
-}
 
-/* Responsiv zwischen 768 und 1023 */
-@media (min-width: 768px) and (max-width: 1023px) {
     .text-section1 {
         padding: 10px;
     }
@@ -1784,6 +1795,7 @@ input,
         border-radius: 5px;
         padding: 2px;
     }
+
     .navigation-impressum a {
         font-size: 0.8rem;
     }

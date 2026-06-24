@@ -15,6 +15,7 @@ function toggleSpiele(buttonId, spieleKlasse) {
 
         for (let i = 0; i < anzahlSichtbar; i++) {
             extraSpiele[i].style.display = "block";
+            
         }
 
         sichtbar_mehranzeigen = anzahlSichtbar;
@@ -150,7 +151,7 @@ emailForm.addEventListener("submit", function (event) {
     event.preventDefault();
 
     emailjs.send("service_e5f0u1o", "template_m3fv85u", {
-        user_email: userEmail.value
+        user_email:userEmail.value
     })
     .then(function () {
         emailInfo.textContent = "E-Mail wurde erfolgreich gesendet ✅";
