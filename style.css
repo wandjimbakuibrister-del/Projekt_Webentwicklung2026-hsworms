@@ -160,9 +160,11 @@ nav li:hover {
     transform: scale(1.5);
     transition: transform 0.3s ease;
 }
-nav a:hover{
-     color: gold;
+
+nav a:hover {
+    color: gold;
 }
+
 .index-seite {
     background-color: rgb(2, 6, 23);
     color: white;
@@ -1234,6 +1236,10 @@ input,
 
     /* header */
     /* Logo oben links*/
+    #aside-bottom {
+        border-bottom: none;
+    }
+
     .text-quiz h2,
     .text-quiz p {
         font-size: 20px;
