@@ -315,7 +315,7 @@ nav a:hover {
 /* Section2 index Navigationsleiste nach dem Shakira-Video */
 .section2-blöcke {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) ;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     row-gap: 5px;
     font-family: "Bebas Neue", sans-serif;
     font-size: 13px;
@@ -934,7 +934,7 @@ footer li:hover {
 
 .antworten {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 12px;
 }
 
@@ -1233,13 +1233,18 @@ input,
 .section2-blöcke span {
     color: gold;
 }
-.section2-blöcke a{
+
+.section2-blöcke a {
     text-decoration: none;
     color: white;
 }
 
 /* Für PC */
 @media (min-width: 1024px) {
+    .quiz-box {
+        min-width: 100%;
+        height: 100%;
+    }
 
     /* header */
     /* Logo oben links*/
@@ -1644,11 +1649,12 @@ input,
     }
 
     /* Anzeige von dem Element Mehr Ansehen in Kärtchen */
-    .section2-blöcke span{
-    
+    .section2-blöcke span {
+
         color: gold;
     }
-    .section2-blöcke a{
+
+    .section2-blöcke a {
         text-decoration: none;
         color: white;
     }
