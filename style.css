@@ -186,7 +186,7 @@ nav a:hover {
 /* Code für Items-größe auf dem Hintergrundsbild */
 
 .text-section1 h1,
-.header-container h1 {
+.header-container div {
     display: flex;
     flex-direction: column;
     color: white;
@@ -277,10 +277,10 @@ nav a:hover {
 
 }
 
-.countdown-section h1 {
+.countdown-section strong {
     color: gold;
-    font-size: 10px;
-    margin-bottom: 25px;
+    font-size: 20px;
+    margin-bottom: 35px;
 }
 
 .countdown {
@@ -294,6 +294,7 @@ nav a:hover {
     border-radius: 10px;
     padding: 8px 8px;
     background-color: transparent;
+
 }
 
 .countdown-box span {
@@ -1399,8 +1400,8 @@ input,
         margin: 0 auto;
     }
 
-    .countdown-section h1 {
-        font-size: 40px;
+    .countdown-section strong {
+        font-size: 45px;
     }
 
     .countdown-box p {
@@ -1693,9 +1694,9 @@ input,
         font-size: 15px;
     }
 
-    .countdown-section h1,
+    .countdown-section strong,
     .countdown-section span {
-        font-size: 20px;
+        font-size: 40px;
 
     }
 
@@ -1807,7 +1808,6 @@ input,
     }
 
 }
-
 
 /* ========================================================================= */
 /* QUIZ INTERACTION - Farben und Zustände*/
