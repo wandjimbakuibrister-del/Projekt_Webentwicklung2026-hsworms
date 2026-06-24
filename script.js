@@ -149,7 +149,7 @@ const emailInfo = document.getElementById("emailInfo");
 
 emailForm.addEventListener("submit", function (event) {
     event.preventDefault();
-    // ####################Für verschlüsselte E-Mail::: Generiert durch KI#################################################
+    
     if (location.protocol !== "https:" && location.hostname !== "localhost") {
         emailInfo.textContent = "Die Verbindung ist nicht sicher. Bitte öffnen Sie die Seite über HTTPS/TLS.";
         emailInfo.className = "warning";
@@ -157,7 +157,7 @@ emailForm.addEventListener("submit", function (event) {
     }
     emailInfo.textContent = "E-Mail wird über eine sichere HTTPS/TLS-Verbindung gesendet ...";
     emailInfo.className = "warning";
-    // ####################################################################################################
+
 
     emailjs.send("service_e5f0u1o", "template_m3fv85u", {
         user_email: userEmail.value

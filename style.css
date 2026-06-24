@@ -1145,7 +1145,7 @@ footer li:hover {
     align-items: center;
 }
 
-.info-content h3 {
+.info-content h2 {
     margin: 0 0 5px 0;
     color: #e2b43b;
     font-size: 1rem;
@@ -1326,15 +1326,13 @@ input,
         border-bottom: none;
     }
 
-    .aside {
-        flex: 1;
-    }
 
 
     /* Burger menü */
     .burger {
         display: none;
     }
+
 
     nav {
         display: flex;
@@ -1649,6 +1647,7 @@ input,
         color: gold;
     }
 }
+
 
 /* Für navigationsleiste Startseite für PC */
 
