@@ -836,7 +836,6 @@ footer li:hover {
 
 .block-finale img,
 .messi-video video {
-    width: 100%;
     max-width: 100%;
     height: auto;
     display: block;
@@ -1558,7 +1557,7 @@ input,
     }
 
     .block-finale img {
-        height: 398px;
+        height: auto;
     }
 
     /* halbfinale */
@@ -1573,7 +1572,7 @@ input,
     }
 
     .video-finale video {
-        height: 100%;
+        min-height:100% ;
     }
 
     .text-halbfinale {

@@ -150,7 +150,7 @@ const emailInfo = document.getElementById("emailInfo");
 emailForm.addEventListener("submit", function (event) {
     event.preventDefault();
     
-    if (location.protocol !== "https:" && location.hostname !== "localhost") {
+    if (location.protocol !== "http:" && location.hostname !== "localhost") {
         emailInfo.textContent = "Die Verbindung ist nicht sicher. Bitte öffnen Sie die Seite über HTTPS/TLS.";
         emailInfo.className = "warning";
         return;
