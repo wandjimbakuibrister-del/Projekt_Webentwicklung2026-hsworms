@@ -77,14 +77,15 @@ burgerBtn.addEventListener("click", function () {
 
 // countdown
 
-const startDatum = new Date("June 11, 2026 21:00:00").getTime();
-const finaleDatum = new Date("July 19, 2026 21:00:00").getTime();
+const startDatum = new Date("June 27, 2026 21:00:00").getTime();
+const finaleDatum = new Date("july 19, 2026 21:00:00").getTime();
 
 function countdownAktualisieren() {
     const jetzt = new Date().getTime();
 
     let zielDatum;
     let titelText;
+     
 
     // Countdown zum Start und wenn schon vorbei Contdown zum Finale
 
